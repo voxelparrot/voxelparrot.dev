@@ -69,7 +69,7 @@ export default function HeroSection() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  onClick={() => scrollToSection("quests")}
+                  onClick={() => scrollToSection("cognata")}
                   className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
                   data-testid="link-github"
                 >
