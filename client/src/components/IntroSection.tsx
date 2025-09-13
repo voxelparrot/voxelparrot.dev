@@ -21,6 +21,7 @@ export default function HeroSection() {
       className="pt-24 pb-16 px-4 sm:px-6 lg:px-8"
       data-testid="hero-section"
     >
+      <div className="pixel-text text-xl text-background">hi</div>
       <div className="max-w-7xl mx-auto text-center">
         <motion.h1
           className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6 animate-pulse"

@@ -7,6 +7,7 @@
       "second": "quartz"
     }
   ],
-    "title": "Rose Quartz",
-    "description": "Obtain Rose Quartz"
+  "title": "Rose Quartz",
+  "description": "Obtain Rose Quartz",
+  "icon": "rose_quartz"
 }

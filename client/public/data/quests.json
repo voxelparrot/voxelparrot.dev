@@ -33,7 +33,7 @@
   "blaze_statue",
   "blaze_burner",
   "zinc",
-  "mix_brass",
+  "brass",
   "brass_casing",
   "quartz",
   "rose_quartz",
@@ -41,10 +41,10 @@
   "electron_tube",
   "mechanical_crafter",
   "steel_ingot",
-  "steel_handle",
+  "steel_tool_handle",
   "mechanical_saw",
   "diamond_plate",
-  "diamond_gem",
+  "diamond",
   "diamond_pickaxe",
   "flint_and_steel"
 ]

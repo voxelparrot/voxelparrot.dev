@@ -76,7 +76,7 @@ export default function Navigation() {
                 className="text-foreground hover:text-accent transition-all hover-scale"
                 data-testid="nav-contact"
               >
-                Cognata Guide
+                Cognata
               </button>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Navigation() {
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-accent transition-all hover-scale"
                 data-testid="nav-contact"
               >
-                Cognata Guide
+                Cognata
               </button>
             </div>
           </div>

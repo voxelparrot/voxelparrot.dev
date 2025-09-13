@@ -4,7 +4,7 @@
       "first": "iron_pickaxe"
     }
   ],
-    "title": "Zinc",
-    "description": "Mine Zinc with your iron pickaxe",
-    "icon": "zinc_ingot"
+  "title": "Zinc",
+  "description": "Mine Zinc with your iron pickaxe",
+  "icon": "zinc_ingot"
 }

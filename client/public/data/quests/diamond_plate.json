@@ -4,10 +4,10 @@
       "first": "mechanical_saw"
     },
     {
-      "second": "diamond_gem"
+      "second": "diamond"
     }
   ],
-    "title": "Diamond Plate",
-    "description": "Use a mechanical saw to create a diamond plate",
-    "icon": "diamond_plate"
+  "title": "Diamond Plate",
+  "description": "Use a mechanical saw to create a diamond plate",
+  "icon": "diamond_plate"
 }

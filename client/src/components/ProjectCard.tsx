@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, X } from "lucide-react";
 import {
@@ -18,6 +18,18 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Function to update based on window width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); // Tailwind "sm" breakpoint
+    };
+
+    handleResize(); // run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <motion.div
@@ -140,18 +152,26 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               className="w-full h-64 object-cover rounded-lg"
             />
 
-            <div className="flex items-center gap-2">
+            {/* Tags */}
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="pixel-text text-xs bg-accent text-accent-foreground px-2 py-1 rounded">
                 {project.type}
               </span>
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded"
-                >
-                  {tag}
-                </span>
-              ))}
+
+              {isMobile
+                ? project.tags?.length > 0 && (
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
+                      {project.tags[0]}
+                    </span>
+                  )
+                : project.tags?.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded"
+                    >
+                      {tag}
+                    </span>
+                  ))}
               {project.version && (
                 <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
                   {project.version}

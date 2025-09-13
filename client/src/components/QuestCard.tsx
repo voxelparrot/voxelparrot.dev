@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ReactMarkdown from "react-markdown";
+import UseQuestTranslations from "./UseQuestTranslations";
 import remarkGfm from "remark-gfm";
 
 interface QuestCardProps {
@@ -28,8 +29,11 @@ export default function QuestCard({
   quest,
   index,
   onTriggerClick,
-  translations,
 }: QuestCardProps) {
+  const translations = UseQuestTranslations();
+
+  const getTitle = (id: string) => translations[id] ?? id;
+
   return (
     <motion.div
       className="bg-card border border-border rounded-lg overflow-hidden hover-lift flex flex-row items-center pixel-frame-9slice-dark"
@@ -47,7 +51,7 @@ export default function QuestCard({
           <img
             src={`/assets/quest/${quest.icon}.png`}
             alt={quest.title}
-            className="w-8 h-8 min-w-[30px] shrink-0 object-cover image-pixelated"
+            className="w-8 h-8 shrink-0 object-cover image-pixelated"
             data-testid={`img-quest-${quest.id}`}
           />
           <span>{quest.title}</span>
@@ -80,7 +84,7 @@ export default function QuestCard({
                     <img
                       src={`/assets/quest/${quest.icon}.png`}
                       alt={quest.title}
-                      className="w-50 h-50 min-w-[30px] shrink-0 object-cover image-pixelated"
+                      className="w-8 h-8 shrink-0 object-contain image-pixelated bg-transparent"
                       data-testid={`img-trigger-${quest.id ?? "related-itself"}`}
                     />
                   </a>
@@ -110,7 +114,7 @@ export default function QuestCard({
                         <img
                           src={`/assets/quest/${triggerText}.png`}
                           alt={triggerText}
-                          className="w-50 h-50 min-w-[30px] shrink-0 object-cover image-pixelated"
+                          className="w-8 h-8 shrink-0 object-contain image-pixelated bg-transparent"
                           data-testid={`img-trigger-${triggerText}`}
                         />
                       </a>
