@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "iron_pickaxe"
+    },
+    {
+      "second": "cogwheel"
+    }
+  ],
+    "title": "Mechanical Mixer",
+    "description": "Craft a whisk and use it to create a mechanical mixer",
+    "icon": "mechanical_mixer"
+}

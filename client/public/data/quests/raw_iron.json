@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "stone_pickaxe"
+    }
+  ],
+    "title": "Raw Iron",
+    "description": "Mine Iron Ore to obtain raw iron",
+    "icon": "raw_iron"
+}

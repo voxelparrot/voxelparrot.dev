@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "furnace"
+    },
+    {
+      "second": "clay_figure"
+    }
+  ],
+  "title": "Kiln",
+  "description": "Craft a Kiln out of a furnace and bricks",
+  "icon": "kiln"
+}

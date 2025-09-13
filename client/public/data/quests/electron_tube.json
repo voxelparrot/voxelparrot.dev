@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "polished_rose_quartz"
+    },
+    {
+      "second": "iron_sheet"
+    }
+  ],
+    "title": "Electron Tube",
+    "description": "Craft an electron tube using polished rose quartz and an iron sheet",
+    "icon": "electron_tube"
+}

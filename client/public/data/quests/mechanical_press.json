@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "shaft"
+    },
+    {
+      "second": "andesite_casing"
+    },
+    {
+      "third": "iron_ingot"
+    }
+  ],
+    "title": "Mechanical Press",
+    "description": "Craft a mechanical press",
+    "icon": "mechanical_press"
+}

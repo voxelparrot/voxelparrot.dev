@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "rope"
+    }
+  ],
+  "title": "Straw",
+  "description": "One of the first things you'll want to do after joining a new world is collect some flowers and use them to make **straw**. **Straw** is useful throughout much of the early game.",
+  "icon": "straw"
+}

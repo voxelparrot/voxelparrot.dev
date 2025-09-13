@@ -1,0 +1,13 @@
+{
+  "name": "Parrot's Plushies",
+  "description": "Adds an assortment of craftable plushies to Minecraft",
+  "extendedDescription": "This mod adds an assortment of colorful plushes to the game!\n\nAs of version 1.1.2 these include: **Parrot Plush, Feather Plush, Pusheen Plush, Kirby Plush, Steve Plush, Akaash Plush, Donutz Plush, Lucid Plush, TwO Plush,** and more to come!\n\nThe mod also adds a set of unique weapons, such as: **Charged Broadsword, Crimson Katana, Fool's Gold Blade, Diamond Destroyer, Copy Sword, Toxic Sword, Zulfiqar, Featherblade, Novice and Elite Bone Scythes, Duskgold Blade, Shadow Blade,** and maybe more soon!\n\nThese weapons are crafted using the new **Soul Upgrade Smithing Template**, used to upgrade some netherite tools with various materials.\n\nAs of version 1.2.1, the mod fully supports **Better Combat** so you can use the.",
+  "type": "Mod",
+  "imageUrl": "parrotsplushiesbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/parrots-plushies"
+  },
+  "tags": ["Decoration", "Equipment", "Blocks"],
+  "version": "v1.2.1",
+  "featured": "false"
+}

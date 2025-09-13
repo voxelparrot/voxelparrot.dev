@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "crude_wooden_axe"
+    }
+  ],
+  "title": "Andesite Casing",
+  "description": "Apply andesite alloy to a stripped log. This will replace the stripped log with a block of **andesite casing**, commonly used for crafting.\n\nThese blocks double as a nice-looking building block.",
+  "icon": "andesite_casing"
+}

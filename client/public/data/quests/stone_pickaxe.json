@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "wooden_pickaxe"
+    }
+  ],
+    "title": "Stone Pickaxe",
+    "description": "Craft a stone pickaxe with string, stone, and a tool handle",
+    "icon": "stone_pickaxe"
+}

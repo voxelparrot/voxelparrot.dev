@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "raw_iron"
+    },
+    {
+      "second": "furnace"
+    }
+  ],
+    "title": "Iron Ingot",
+    "description": "Obtain an Iron Ingot",
+    "icon": "iron_ingot"
+}

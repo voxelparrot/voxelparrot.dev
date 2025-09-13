@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "empty_blaze_burner"
+    }
+  ],
+  "title": "Blaze Burner",
+  "description": "Trap a blaze in a **blaze burner**!\n\nYou can place this under your basin and feed it fuel to perform heated mixing.",
+  "icon": "blaze_burner"
+}

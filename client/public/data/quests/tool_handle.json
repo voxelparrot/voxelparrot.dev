@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "leather"
+    },
+    {
+      "second": "wooden_pickaxe"
+    }
+  ],
+    "title": "Tool Handle",
+    "description": "Craft a basic tool handle with sticks and leather",
+    "icon": "tool_handle"
+}

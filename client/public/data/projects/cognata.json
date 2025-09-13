@@ -1,0 +1,14 @@
+{
+  "name": "Cognata",
+  "description": "Ultimate survival multiplayer modpack, with extremely advanced progression, civilization building aspects, and warfare!",
+  "extendedDescription": "Ultimate survival multiplayer modpack, with extremely advanced progression, civilization building aspects, and warfare!\n\nCo-created with **AkaashMinecraft**",
+  "type": "Modpack",
+  "imageUrl": "fogbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/cognata"
+  },
+  "tags": ["Survival", "Progression", "Cognata", "Mobs"],
+  "version": "v0.9.0",
+  "modCount": "183 mods",
+  "featured": "true"
+}

@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "mechanical_mixer"
+    },
+    {
+      "second": "basin"
+    }
+  ],
+    "title": "Quartz",
+    "description": "Mix sand, lava, and glass to make quartz",
+    "icon": "quartz"
+}

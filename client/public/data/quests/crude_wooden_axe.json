@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "rope"
+    }
+  ],
+    "title": "Crude Axe",
+    "description": "Craft a Crude Wooden Axe using rope and wood",
+    "icon": "crude_wooden_axe"
+}

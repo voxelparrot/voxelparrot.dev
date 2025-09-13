@@ -1,0 +1,12 @@
+{
+  "triggers": [
+    {
+      "first": "iron_pickaxe"
+    },
+    {
+      "second": "quartz"
+    }
+  ],
+    "title": "Rose Quartz",
+    "description": "Obtain Rose Quartz"
+}

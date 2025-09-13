@@ -1,0 +1,13 @@
+{
+  "name": "Cognata Guide",
+  "description": "The guidebook for the Cognata modpack, (in)complete with step-by-step progression information!",
+  "extendedDescription": "The guidebook for the Cognata modpack...\n\nIt doesn't exist yet lol",
+  "type": "Website",
+  "imageUrl": "fogbanner.png",
+  "links": {
+    "none": "true"
+  },
+  "tags": ["Guide", "Website", "Misc"],
+  "version": "v0.0.0",
+  "featured": "false"
+}

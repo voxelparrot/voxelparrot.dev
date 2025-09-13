@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(220, 13%, 9%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(220, 13%, 9%, 0.8);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(220, 13%, 9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(209, 69%, 62%);
+  --primary-foreground: hsl(220, 13%, 9%);
+  --secondary: hsl(207, 12%, 14%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --muted: hsl(220, 13%, 14%, 0.6);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(0, 0%, 91%);
+  --accent-foreground: hsl(220, 13%, 9%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(213.75, 11.59%, 27.06%);
+  --input: hsl(206.67, 12.68%, 13.92%);
+  --ring: hsl(214.21, 69.93%, 70%);
+  --chart-1: hsl(0, 70%, 70%);
+  --chart-2: hsl(15, 80%, 65%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(340, 75%, 65%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(220, 13%, 9%, 0.8);
+  --sidebar-foreground: hsl(214, 12%, 27%);
+  --sidebar-primary: hsl(0, 70%, 70%);
+  --sidebar-primary-foreground: hsl(220, 13%, 9%);
+  --sidebar-accent: hsl(0, 70%, 70%);
+  --sidebar-accent-foreground: hsl(220, 13%, 9%);
+  --sidebar-border: hsl(220, 13%, 20%);
+  --sidebar-ring: hsl(0, 70%, 70%);
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-serif: 'Fira Code', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-pixel: 'Silkscreen', monospace;
+  --radius: 0.75rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00), 0px 1px 2px -1px hsl(0, 70%, 70%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00), 0px 1px 2px -1px hsl(0, 70%, 70%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00), 0px 2px 4px -1px hsl(0, 70%, 70%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00), 0px 4px 6px -1px hsl(0, 70%, 70%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00), 0px 8px 10px -1px hsl(0, 70%, 70%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(0, 70%, 70%, 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(220, 13%, 9%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(220, 13%, 9%, 0.8);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(220, 13%, 9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(0, 70%, 70%);
+  --primary-foreground: hsl(220, 13%, 9%);
+  --secondary: hsl(220, 13%, 14%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --muted: hsl(220, 13%, 14%, 0.6);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --accent: hsl(0, 70%, 70%);
+  --accent-foreground: hsl(220, 13%, 9%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(220, 13%, 20%);
+  --input: hsl(220, 13%, 14%);
+  --ring: hsl(0, 70%, 70%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax-base {
+  transform: translateZ(0);
+}
+
+.brick-bg {
+  background-image: url('/assets/wall_back.png');
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 1.0;
+  width: 200vw;
+  height: 400vh;
+  top: -50vh;
+  left: -50vw;
+}
+
+.content-overlay {
+  background: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+.pixel-text {
+  font-family: var(--font-pixel);
+  line-height: 1.6;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .parallax-back {
+    transform: translateZ(0) scale(1);
+  }
+
+  .pixel-text {
+    font-size: 0.75rem;
+  }
+}
+
+.prose a {
+  color: #8bb4ea;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #5b95e1;
+}
+
+.prose blockquote {
+  border-left: 4px solid #383a3e;
+  color: #a8a8a8;
+  font-style: italic;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+.prose strong {
+  color: #d6d6d6;
+  font-weight: 700;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: #d6d6d6;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.pixel-button-9slice {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--foreground);
+  text-align: center;
+  cursor: pointer;
+  image-rendering: pixelated;
+
+  border-width: 8px;
+  border-style: solid;
+  border-image-source: url('/assets/button_sq.png');
+  border-image-slice: 5 fill;
+  border-image-repeat: stretch;
+  border-image-width: 2;
+  background-color: var(--card);
+  background-clip: padding-box;
+
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.pixel-button-9slice:hover {
+  border-image-source: url('/assets/button_h_sq.png');
+}
+
+.pixel-frame-9slice {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--font-pixel);
+  font-size: 0.875rem;
+  color: var(--foreground);
+  text-align: center;
+  image-rendering: pixelated;
+
+  border-width: 8px;
+  border-style: solid;
+  border-image-source: url('/assets/button_i_sq.png');
+  border-image-slice: 5 fill;
+  border-image-repeat: stretch;
+  border-image-width: 2;
+  background-color: var(--card);
+  background-clip: padding-box;
+}
+
+.pixel-frame-9slice-dark {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--font-pixel);
+  font-size: 0.875rem;
+  color: var(--foreground);
+  text-align: center;
+  image-rendering: pixelated;
+
+  border-width: 8px;
+  border-style: solid;
+  border-image-source: url('/assets/button_d_sq.png');
+  border-image-slice: 5 fill;
+  border-image-repeat: stretch;
+  border-image-width: 2;
+  background-color: var(--card);
+  background-clip: padding-box;
+}
+
+.image-pixelated {
+  image-rendering: pixelated;
+}

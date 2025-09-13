@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "steel_ingot"
+    }
+  ],
+    "title": "Steel Tool Handle",
+    "description": "Craft some steel rods and use them to craft steel handles",
+    "icon": "steel_tool_handle"
+}

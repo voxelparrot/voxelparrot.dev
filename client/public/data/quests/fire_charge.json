@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "iron_pickaxe"
+    }
+  ],
+    "title": "Fire Charge",
+    "description": "Use lava, coal, and gunpowder to craft a fire charge.",
+    "icon": "fire_charge"
+}

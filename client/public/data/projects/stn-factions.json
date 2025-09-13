@@ -1,0 +1,16 @@
+{
+  "name": "STN Factions",
+  "description": "A modded Minecraft server with multiple seasons and a great community.",
+  "extendedDescription": "A modded Minecraft server with multiple seasons and a strong community.\n\nI have contributed to:\n\n- Season 3 with **Parrot's Plushies 1.0.0** and **Giant Cookie**\n\n- Season 4 with **Parrot's Plushies 1.2.1**\n\n- Season 5\n\n- Season 6 with **Clay Figure**, **Early Game Additions** and early versions of **Material Ascension**\n\n- Season 7\n\nNot owned by me, but I have put a lot of work into this community.\n\n**Season 6** actually used an early version of **Cognata**!",
+  "type": "Server",
+  "imageUrl": "stnfactionsbanner.png",
+  "links": {
+    "none": "true"
+  },
+  "tags": [
+    "Misc",
+    "Seasons"
+  ],
+  "version": "v1.8.0",
+  "featured": "true"
+}

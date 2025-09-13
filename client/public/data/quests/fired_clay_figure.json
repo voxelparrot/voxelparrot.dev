@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "clay_figure"
+    },
+    {
+      "second": "kiln"
+    }
+  ],
+    "title": "Fired Clay Figure",
+    "description": "Fire a clay figure in a kiln and place it down to summon a villager",
+    "icon": "fired_clay_figure"
+}

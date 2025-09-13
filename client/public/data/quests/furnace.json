@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "wooden_pickaxe"
+    }
+  ],
+    "title": "Furnace",
+    "description": "Craft a furnace with stone and coal. You can get charcoal by breaking your campfire.",
+    "icon": "furnace"
+}

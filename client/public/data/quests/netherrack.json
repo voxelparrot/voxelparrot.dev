@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "mechanical_mixer"
+    },
+    {
+      "second": "basin"
+    }
+  ],
+    "title": "Netherrack",
+    "description": "Mix some lava, magma, and cobblestone to create netherrack",
+    "icon": "netherrack"
+}

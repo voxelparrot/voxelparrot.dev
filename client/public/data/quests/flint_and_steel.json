@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "steel_ingot"
+    }
+  ],
+    "title": "Flint and Steel",
+    "description": "Use steel to craft flint and steel",
+    "icon": "flint_and_steel"
+}

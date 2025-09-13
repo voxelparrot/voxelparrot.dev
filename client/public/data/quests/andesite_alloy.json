@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "andesite"
+    },
+    {
+      "second": "iron_ingot"
+    }
+  ],
+  "title": "Andesite Alloy",
+  "description": "You can craft **Andesite Alloy** with 4 iron nuggets and one block of andesite. This can later be optimized by using zinc nuggets, and can be even further optimized with a mechanical mixer.\n\n**Andesite Alloy** is an important ingredient for many machines.",
+  "icon": "andesite_alloy"
+}

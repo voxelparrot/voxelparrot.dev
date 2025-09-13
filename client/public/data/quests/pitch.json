@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "sap"
+    }
+  ],
+    "title": "Pitch",
+    "description": "Cook sap on a campfire to make pitch",
+    "icon": "pitch"
+}

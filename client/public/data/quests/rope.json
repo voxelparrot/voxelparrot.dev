@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "straw"
+    }
+  ],
+    "title": "Rope",
+    "description": "Use the straw to craft some rope",
+    "icon": "rope"
+}

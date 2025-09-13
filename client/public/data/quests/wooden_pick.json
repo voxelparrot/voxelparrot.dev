@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "pitch"
+    },
+    {
+      "second": "crafting_table"
+    },
+    {
+      "third": "rope"
+    }
+  ],
+    "title": "Wooden Pickaxe",
+    "description": "Craft a wooden pickaxe with wood, pitch, and rope",
+    "icon": "wooden_pickaxe"
+}

@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "iron_pickaxe"
+    }
+  ],
+    "title": "Mechanical Saw",
+    "description": "Craft a Mechanical Saw",
+    "icon": "mechanical_saw"
+}

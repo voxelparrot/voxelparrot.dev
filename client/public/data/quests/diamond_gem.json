@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "iron_pickaxe"
+    }
+  ],
+    "title": "Diamond",
+    "description": "Mine a diamond ore and obtain a diamond",
+    "icon": "diamond"
+}

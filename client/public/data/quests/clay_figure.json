@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "crafting_table"
+    }
+  ],
+    "title": "Clay Figure",
+    "description": "Craft a clay figure out of clay",
+    "icon": "clay_figure"
+}

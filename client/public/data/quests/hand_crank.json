@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "andesite_alloy"
+    }
+  ],
+    "title": "Hand Crank",
+    "description": "Craft a Hand Crank, your first source of RPM",
+    "icon": "hand_crank"
+}

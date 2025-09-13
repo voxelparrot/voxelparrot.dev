@@ -1,0 +1,19 @@
+{
+  "triggers": [
+    {
+      "first": "fire_charge"
+    },
+    {
+      "second": "empty_blaze_burner"
+    },
+    {
+      "third": "blaze_burner"
+    },
+    {
+      "fourth": "mechanical_mixer"
+    }
+  ],
+  "title": "Blaze Statue",
+  "description": "A **blaze statue** is used to summon blazes. While quite primitive in comparison to the blaze spawners in nether fortresses, it gets the job done.\n\nGet ready to trap the spawned blaze in a **blaze burner** if you want to do some alloying.",
+  "icon": "blaze_statue"
+}

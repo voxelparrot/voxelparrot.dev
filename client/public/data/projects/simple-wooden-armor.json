@@ -1,0 +1,14 @@
+{
+  "name": "Simple Wooden Armor",
+  "description": "Adds a wooden armor set for each vanilla wood type to the game.",
+  "extendedDescription": "This mod adds a simple wooden armor set for expanding early game, crafted with wooden logs as the material.\n\nThe armor is slightly weaker than leather armor.",
+  "type": "Mod",
+  "imageUrl": "woodenarmorbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/mod/wooden-armor",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/wooden-armor"
+  },
+  "tags": ["Equipment", "Progression", "Decoration"],
+  "version": "v1.1.1",
+  "featured": "false"
+}

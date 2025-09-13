@@ -1,0 +1,13 @@
+{
+  "name": "voxelparrot.dev",
+  "description": "The website you're looking at",
+  "extendedDescription": "I made this website to showcase my projects, which I can see you are looking at right now!\n\n> hello there",
+  "type": "Website",
+  "imageUrl": "fogbanner.png",
+  "links": {
+    "none": "true"
+  },
+  "tags": ["Portfolio", "Website", "Misc"],
+  "version": "v2.1.1",
+  "featured": "true"
+}

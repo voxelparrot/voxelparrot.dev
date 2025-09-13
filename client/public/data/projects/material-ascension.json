@@ -1,0 +1,14 @@
+{
+  "name": "Material Ascension",
+  "description": "Integrates Create, Basic Weapons, and More Ores More Gems together and adds several legendary weapons to craft in the late game",
+  "extendedDescription": "> Made for the **Cognata** modpack \n(_coming soon probably_)\n\n![Material Ascension Title](https://cdn.modrinth.com/data/cached_images/267b3a17f9722f798d0437ef10c4ce28784aaabd.png)\n\nThis mod does a few things:\n1. Integrates Create's metalworking mechanics with vanilla and modded progression\n2. Brings the vanilla+ weaponry of Basic Weapons to the material variety of More Ores More Gems\n3. Adds advanced handles and rods for better toolmaking and use in modpacks\n4. Includes several legendary weapons made with create's mechanical crafting\n5. Fully supports the Better Combat mod!\n\n**Required Mods:**\n- [MORE ORES MORE GEMS](https://modrinth.com/mod/more-ores-more-gem)\n- [CREATE](https://modrinth.com/mod/create)\n- [BASIC WEAPONS](https://github.com/Khazoda/basic-weapons)\n\nYou will have to manually modify recipes if you do not use the above mods!\n\n**Optional Mods:** (but recommended)\n- [BETTER COMBAT](https://modrinth.com/mod/better-combat)\n- [ENDLESS OF HEART](https://modrinth.com/mod/endless-heart)\n\nSome of the legendary weapons require ingredients from other mods. You can assume they all require the mods listed above as required, but some also require extra mods. Here is a list of all of the legendary weapons:\n1. Zebasi Glaive (no extra requirements)\n2. Toxic Sword (requires [Endless of Heart](https://modrinth.com/mod/endless-heart))\n3. Shadow Blade (requires [Endless of Heart](https://modrinth.com/mod/endless-heart))\n4. Ruby Katana (no extra requirements)\n5. Fool's Gold Blade (requires [Twigs](https://modrinth.com/mod/twigs))\n6. Copy Sword (requires no extra mods)\n7. Charged Broadsword (requires no extra mods)\n\nFeel free to use this mod in your modpack! All dependencies of this mod are only required because of recipe compatibilities so it is fully possible to use this mod on its own if you change the recipes.",
+  "type": "Mod",
+  "imageUrl": "matascbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/material-ascension",
+    "github": "https://github.com/voxelparrot/materialascension"
+  },
+  "tags": ["Equipment", "Progression", "Cognata"],
+  "version": "v1.0.0",
+  "featured": "true"
+}

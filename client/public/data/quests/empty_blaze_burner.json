@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "netherrack"
+    },
+    {
+      "second": "iron_sheet"
+    }
+  ],
+    "title": "Empty Blaze Burner",
+    "description": "Craft an empty Blaze Burner with your netherrack and some iron sheets",
+    "icon": "empty_blaze_burner"
+}

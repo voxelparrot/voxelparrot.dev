@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "mechanical_mixer"
+    }
+  ],
+    "title": "Steel",
+    "description": "Obtain a Steel Ingot by mixing iron and coal in a heated basin",
+    "icon": "steel_ingot"
+}

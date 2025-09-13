@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "andesite_alloy"
+    }
+  ],
+    "title": "Andesite Shaft",
+    "description": "Craft some andesite shafts",
+    "icon": "shaft"
+}

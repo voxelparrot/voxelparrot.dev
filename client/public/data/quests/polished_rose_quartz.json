@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "rose_quartz"
+    }
+  ],
+    "title": "Polished Rose Quartz",
+    "description": "Hold sandpaper in one hand and rose quartz in the other. Right-click to polish the rose quartz.",
+    "icon": "polished_rose_quartz"
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "diamond_plate"
+    },
+    {
+      "second": "steel_handle"
+    },
+    {
+      "third": "mechanical_crafter"
+    }
+  ],
+    "title": "Diamond Pickaxe",
+    "description": "Use five Mechanical Crafters, two diamond plates, a diamond, and two steel tool handles to craft yourself a diamond pickaxe",
+    "icon": "diamond_pickaxe"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Smoothie Gauntlet",
+  "description": "A roguelite game I'm working on on the side where you use a smoothie blaster to fight mutant fruits and vegetables, collecting ingredients along the way to improve your ammo with different perks!\n\nThe art does not exist yet :pensive:",
+  "extendedDescription": "",
+  "type": "Game",
+  "imageUrl": "fogbanner.png",
+  "links": {
+    "none": "true"
+  },
+  "tags": ["Roguelite", "Misc"],
+  "version": "v0.0.4",
+  "featured": "false"
+}

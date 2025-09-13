@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "wooden_pickaxe"
+    },
+    {
+      "second": "zinc"
+    },
+    {
+      "third": "andesite_alloy"
+    }
+  ],
+  "title": "Andesite",
+  "description": "**Andesite** is a type of stone that can be found underground in large patches, or crafted by combining cobblestone and diorite. It is needed to make andesite alloy, an important crafting ingredient.",
+  "icon": "andesite"
+}

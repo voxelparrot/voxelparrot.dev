@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "hand_crank"
+    },
+    {
+      "second": "mechanical_press"
+    },
+    {
+      "third": "iron_ingot"
+    }
+  ],
+    "title": "Iron Sheet",
+    "description": "Press an Iron Ingot by dropping it under a mechanical crafter and applying RPM to it with a hand crank",
+    "icon": "iron_sheet"
+}

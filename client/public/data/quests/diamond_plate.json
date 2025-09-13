@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "mechanical_saw"
+    },
+    {
+      "second": "diamond_gem"
+    }
+  ],
+    "title": "Diamond Plate",
+    "description": "Use a mechanical saw to create a diamond plate",
+    "icon": "diamond_plate"
+}

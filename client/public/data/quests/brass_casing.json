@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "mix_brass"
+    }
+  ],
+    "title": "Brass Casing",
+    "description": "Apply a brass ingot to any stripped log to make brass casing",
+    "icon": "brass_casing"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Giant Cookie",
+  "description": "Adds a craftable (possibly unhealthy) giant cookie to Minecraft.",
+  "extendedDescription": "This mod adds a craftable giant cookie. Eating it might be bad for you...",
+  "type": "Mod",
+  "imageUrl": "giantcookiebanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/giant-cookie"
+  },
+  "tags": ["Food", "Equipment"],
+  "version": "v1.0.2",
+  "featured": "false"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Clay Figure",
+  "description": "Allows you to summon villagers and blazes by crafting figures and placing them.",
+  "extendedDescription": "This mod allows you to summon villagers by sculpting **clay figures**, firing them, and then placing the fired figures. You are also able to craft **golden blaze statues** to summon blazes.\n\nThe unfired figures are crafted using clay, and firing the figures takes about one minute in a blast furnace.\n\n>Important note: the firing only works in a blast furnace.\n\nUpon right click on a block with at least two non-solid blocks above it, the figure will be placed and spawn the mob.",
+  "type": "Mod",
+  "imageUrl": "clayfigurebanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/clay-figure",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/clay-figure"
+  },
+  "tags": ["Mobs", "Cognata", "Equipment"],
+  "version": "v2.0.1",
+  "featured": "false"
+}

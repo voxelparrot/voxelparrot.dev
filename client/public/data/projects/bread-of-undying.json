@@ -1,0 +1,13 @@
+{
+  "name": "Bread of Undying",
+  "description": "Turns the Totem of Undying into the Bread of Undying.",
+  "extendedDescription": "Replaces the Totem of Undying with **Bread of Undying**\n- Adds an eating sound effect when activated",
+  "type": "Resource Pack",
+  "imageUrl": "breadofundyingbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/project/bread-of-undying"
+  },
+  "tags": ["Equipment", "Food"],
+  "version": "v1.0.0",
+  "featured": "false"
+}

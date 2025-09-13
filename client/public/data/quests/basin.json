@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "andesite_alloy"
+    },
+    {
+      "second": "iron_pickaxe"
+    }
+  ],
+  "title": "Basin",
+  "description": "Place 5 andesite alloy pieces in a U shape in the crafting table to make a **basin**. It is used for mixing and compacting recipes which each require a mixer and press above the basin respectively.",
+  "icon": "basin"
+}

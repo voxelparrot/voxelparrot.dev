@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "crude_wooden_tap"
+    },
+    {
+      "second": "pitch"
+    }
+  ],
+  "title": "Sap",
+  "description": "Use a tap on a log to collect **sap**. (Right-click on a log while holding a tap)\n\nSap is needed to obtain pitch, which is then used to make your first pickaxe.",
+  "icon": "sap"
+}

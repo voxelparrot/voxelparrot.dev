@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "crude_wooden_axe"
+    },
+    {
+      "second": "leather"
+    }
+  ],
+  "title": "Crafting Table",
+  "description": "Apply leather to a stripped log to make a crafting table",
+  "icon": "crafting_table"
+}

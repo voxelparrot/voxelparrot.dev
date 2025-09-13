@@ -1,0 +1,13 @@
+{
+  "triggers": [
+    {
+      "first": "zinc"
+    },
+    {
+      "second": "mechanical_mixer"
+    }
+  ],
+    "title": "Brass",
+    "description": "Mix Copper and Zinc together in a heated basin to make Brass",
+    "icon": "brass_ingot"
+}

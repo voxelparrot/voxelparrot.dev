@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "electron_tube"
+    },
+    {
+      "second": "brass_casing"
+    },
+    {
+      "third": "crafting_table"
+    }
+  ],
+    "title": "Mechanical Crafter",
+    "description": "Create a Mechanical Crafter",
+    "icon": "mechanical_crafter"
+}

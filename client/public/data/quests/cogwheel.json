@@ -1,0 +1,10 @@
+{
+  "triggers": [
+    {
+      "first": "shaft"
+    }
+  ],
+    "title": "Cogwheel",
+    "description": "Craft a cogwheel by combining a shaft and a plank",
+    "icon": "cogwheel"
+}

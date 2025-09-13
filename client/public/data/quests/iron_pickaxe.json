@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "first": "iron_ingot"
+    },
+    {
+      "second": "iron_sheet"
+    },
+    {
+      "third": "tool_handle"
+    }
+  ],
+    "title": "Iron Pickaxe",
+    "description": "Craft an Iron Pickaxe using iron sheets, tool handles, and an iron ingot",
+    "icon": "iron_pickaxe"
+}
