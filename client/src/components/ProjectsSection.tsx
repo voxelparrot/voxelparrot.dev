@@ -20,6 +20,7 @@ export default function ProjectsSection() {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     async function fetchProjects() {
@@ -48,7 +49,7 @@ export default function ProjectsSection() {
     if (!projects.length) return;
 
     let filtered: Project[] = [];
-
+    
     switch (selectedCategory) {
       case "All":
         filtered = projects;
@@ -77,6 +78,14 @@ export default function ProjectsSection() {
         break;
     }
 
+    switch (searchQuery) {
+        case "":
+            break;
+        default:
+            filtered = filtered.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+      setFilteredProjects(filtered);
+    }
+    
     setFilteredProjects(filtered);
   }, [projects, selectedCategory]);
 
@@ -117,9 +126,31 @@ export default function ProjectsSection() {
             className="text-muted-foreground max-w-2xl mx-auto"
             data-testid="projects-description"
           >
-            yes
+            Filter Projects by Type, Category, Tag, or Search
           </p>
         </div>
+
+        
+        {/* Search Box */}
+        <div className="flex justify-center mb-6 relative">
+          <input
+            type="text"
+            placeholder="Search projects..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="px-4 py-2 w-72 rounded-lg border border-gray-400 pixel-text bg-secondary"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+
 
         {/* Filter Buttons */}
         <div

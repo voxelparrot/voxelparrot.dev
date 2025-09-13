@@ -5,7 +5,7 @@
   "type": "Website",
   "imageUrl": "fogbanner.png",
   "links": {
-    "none": "true"
+    "github": "https://github.com/voxelparrot/voxelparrot.dev"
   },
   "tags": ["Portfolio", "Website", "Misc"],
   "version": "v2.1.1",
