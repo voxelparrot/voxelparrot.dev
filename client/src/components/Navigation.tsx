@@ -72,7 +72,7 @@ export default function Navigation() {
                 Projects
               </button>
               <button
-                onClick={() => scrollToSection("quests")}
+                onClick={() => scrollToSection("cognata")}
                 className="text-foreground hover:text-accent transition-all hover-scale"
                 data-testid="nav-contact"
               >
@@ -122,7 +122,7 @@ export default function Navigation() {
                 Projects
               </button>
               <button
-                onClick={() => scrollToSection("quests")}
+                onClick={() => scrollToSection("cognata")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-accent transition-all hover-scale"
                 data-testid="nav-contact"
               >

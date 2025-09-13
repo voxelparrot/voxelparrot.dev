@@ -61,7 +61,7 @@ export default function QuestsSection() {
 
   if (isLoading) {
     return (
-      <section id="quests" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="cognata" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center animate-pulse">
           <div className="h-8 bg-muted rounded w-64 mx-auto mb-4"></div>
           <div className="h-4 bg-muted rounded w-96 mx-auto"></div>
@@ -71,7 +71,7 @@ export default function QuestsSection() {
   }
 
   return (
-    <section id="quests" className="py-16 px-4 sm:px-6 lg:px-8">
+    <section id="cognata" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="pixel-text text-xl md:text-2xl font-bold text-primary mb-4">
