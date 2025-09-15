@@ -87,13 +87,13 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
               <a
-                href="https://voxelparrot.dev"
+                href="https://github.com/voxelparrot/voxelparrot.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
                 data-testid="featured-link-domain"
               >
-                Domain
+                Github
               </a>
               <li>• Documentation</li>
               <li>• Project information</li>
