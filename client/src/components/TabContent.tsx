@@ -2,6 +2,7 @@ import IntroSection from "@/components/IntroSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import ProjectsSection from "@/components/ProjectsSection";
 import QuestsSection from "@/components/QuestsSection";
+import NotFound from "@/components/NotFound";
 
 interface TabContentProps {
   activeTab: string;
@@ -35,6 +36,11 @@ export default function TabContent({ activeTab, setActiveTab }: TabContentProps)
 
   // Find the current tab
   const currentTab = tabs.find((tab) => tab.id === activeTab);
+
+  if (!currentTab) {
+    // If the tab doesn’t exist, render NotFound
+    return <NotFound setActiveTab={setActiveTab} />;
+  }
 
   // Render its components
   return <>{currentTab?.components}</>;
