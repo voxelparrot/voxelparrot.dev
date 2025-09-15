@@ -7,7 +7,11 @@ import {
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 
-export default function HeroSection() {
+interface IntroSectionProps {
+  setActiveTab: (tabId: string) => void;
+}
+
+export default function IntroSection({ setActiveTab }: IntroSectionProps) {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,17 +22,16 @@ export default function HeroSection() {
   return (
     <section
       id="about"
-      className="pt-24 pb-16 px-4 sm:px-6 lg:px-8"
-      data-testid="hero-section"
+      className="pt-28 px-4 sm:px-6 lg:px-8"
+      data-testid="intro-section"
     >
-      <div className="pixel-text text-xl text-background">hi</div>
       <div className="max-w-7xl mx-auto text-center">
         <motion.h1
-          className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6 animate-pulse"
+          className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          data-testid="hero-title"
+          data-testid="intro-title"
         >
           Hello
         </motion.h1>
@@ -38,7 +41,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          data-testid="hero-description"
+          data-testid="intro-description"
         >
           I'm voxelparrot, an artist, modeler, and programmer.{" "}
         </motion.p>
@@ -50,7 +53,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <button
-            onClick={() => scrollToSection("projects")}
+                  onClick={() => setActiveTab("projects")}
             className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 ease-in-out pixel-text hover-scale"
             data-testid="button-browse-projects"
           >
@@ -69,7 +72,7 @@ export default function HeroSection() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  onClick={() => scrollToSection("cognata")}
+                  onClick={() => setActiveTab("cognata")}
                   className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
                   data-testid="link-github"
                 >

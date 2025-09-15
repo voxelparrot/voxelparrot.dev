@@ -3,7 +3,7 @@
   "description": "Remodels the workstations from the Recruits mod and Workers mod to be more 3D.",
   "extendedDescription": "Adds 3D table models to the Workers and Recruits mods\n\n [Villager Workers Mod](https://modrinth.com/mod/villager-workers)\n\n [Villager Recruits Mod](https://modrinth.com/mod/villager-recruits)\n\n### Workers\n- Cattle Farmer's Table\n- Chicken Farmer's Table\n- Farmer's Table\n- Fisherman's Table\n- Lumberjack's Table\n- Merchant's Table\n- Miner's Table\n- Shepherd's Table\n- Swineherd's Table\n\n### Recruits\n- Recruit's Table\n- Bowman's Table\n- Shieldman's Table\n- Crossbowman's Table\n- Horseman's Table\n- Nomad's Table",
   "type": "Resource Pack",
-  "imageUrl": "https://cdn.modrinth.com/data/HcqIp9te/images/afff47be3e51167c4247b93532ed2c82b9aaefd0.png",
+  "imageUrl": "3drecruitstables.png",
   "links": {
     "modrinth": "https://modrinth.com/resourcepack/3d-recruits-tables",
     "curseforge": "https://www.curseforge.com/minecraft/texture-packs/parrots-3d-recruit-tables"

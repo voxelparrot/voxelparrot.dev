@@ -1,11 +1,16 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Project } from "@shared/schema";
 import ReactMarkdown from "react-markdown";
-export default function FeaturedProjects() {
+
+interface FeaturedProjectsProps {
+  setActiveTab: (tabId: string) => void;
+}
+
+export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps) {
   return (
     <section
       id="featured"
-      className="py-16 px-4 sm:px-6 lg:px-8"
+      className="py-10 px-4 sm:px-6 lg:px-8"
       data-testid="skills-section"
     >
       <div className="max-w-7xl mx-auto">

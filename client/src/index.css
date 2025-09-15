@@ -144,6 +144,11 @@
   transition: transform 0.3s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
+.hover-scale-big:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
 @media (max-width: 768px) {
   .parallax-back {
     transform: translateZ(0) scale(1);

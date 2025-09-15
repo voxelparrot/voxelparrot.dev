@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import type { Project } from "@shared/schema";
+import { motion } from "framer-motion";
 
 // Filter options
 const filterfeatured = ["All", "Featured"];
@@ -48,52 +49,54 @@ export default function ProjectsSection() {
   useEffect(() => {
     if (!projects.length) return;
 
-    let filtered: Project[] = [];
-    
-    switch (selectedCategory) {
-      case "All":
-        filtered = projects;
-        break;
-      case "Mods":
-        filtered = projects.filter((p) => p.type === "Mod");
-        break;
-      case "Modpacks":
-        filtered = projects.filter((p) => p.type === "Modpack");
-        break;
-      case "Resource Packs":
-        filtered = projects.filter((p) => p.type === "Resource Pack");
-        break;
-      case "Other":
-        filtered = projects.filter((p) => p.tags.includes("Misc"));
-        break;
-      case "Featured":
-        filtered = projects.filter((p) => p.featured === "true");
-        break;
-      default:
-        if (filtertags.includes(selectedCategory)) {
-          filtered = projects.filter((p) => p.tags.includes(selectedCategory));
-        } else {
-          filtered = projects.filter((p) => p.category === selectedCategory);
+    // Start with all projects
+    let filtered = projects;
+
+    // Category / type / tag filtering
+    if (selectedCategory && selectedCategory !== "All") {
+      filtered = filtered.filter((p) => {
+        // Featured
+        if (selectedCategory === "Featured") return p.featured === "true";
+
+        // Type filters
+        if (filtertype.includes(selectedCategory)) {
+          switch (selectedCategory) {
+            case "Mods":
+              return p.type === "Mod";
+            case "Modpacks":
+              return p.type === "Modpack";
+            case "Resource Packs":
+              return p.type === "Resource Pack";
+            case "Other":
+              return p.tags.includes("Misc");
+          }
         }
-        break;
+
+        // Tag filters
+        if (filtertags.includes(selectedCategory)) {
+          return p.tags.includes(selectedCategory);
+        }
+
+        return true;
+      });
     }
 
-    switch (searchQuery) {
-        case "":
-            break;
-        default:
-            filtered = filtered.filter((p) => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
-      setFilteredProjects(filtered);
+    // Search filtering (applied after category/tag filter)
+    if (searchQuery.trim() !== "") {
+      filtered = filtered.filter((p) =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
-    
+
     setFilteredProjects(filtered);
-  }, [projects, selectedCategory]);
+  }, [projects, selectedCategory, searchQuery]);
+
 
   if (isLoading) {
     return (
       <section
         id="projects"
-        className="py-16 px-4 sm:px-6 lg:px-8"
+        className="pt-28 px-4 sm:px-6 lg:px-8"
         data-testid="projects-section"
       >
         <div className="max-w-7xl mx-auto">
@@ -111,23 +114,29 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-16 px-4 sm:px-6 lg:px-8"
+      className="pt-28 px-4 sm:px-6 lg:px-8"
       data-testid="projects-section"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2
-            className="pixel-text text-xl md:text-2xl font-bold text-primary mb-4"
-            data-testid="projects-title"
-          >
-            Projects
-          </h2>
-          <p
+          <motion.h1
+                    className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    data-testid="projects-title"
+                  >
+                    Projects
+                  </motion.h1>
+          <motion.p
             className="text-muted-foreground max-w-2xl mx-auto"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
             data-testid="projects-description"
           >
             Filter Projects by Type, Category, Tag, or Search
-          </p>
+          </motion.p>
         </div>
 
         
@@ -143,7 +152,7 @@ export default function ProjectsSection() {
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+              className="relative right-8 text-accent-500 hover-scale-big"
               aria-label="Clear search"
             >
               ✕
