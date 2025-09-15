@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Skill } from "@shared/schema";
+import LoadingComponent from "@/components/LoadingComponent";
 
 export default function SkillsSection() {
   const { data: skills, isLoading } = useQuery<Skill[]>({
@@ -8,25 +9,7 @@ export default function SkillsSection() {
 
   if (isLoading) {
     return (
-      <section
-        id="skills"
-        className="py-16 px-4 sm:px-6 lg:px-8"
-        data-testid="skills-section"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="animate-pulse">
-              <div className="h-8 bg-muted rounded w-64 mx-auto mb-4"></div>
-              <div className="h-4 bg-muted rounded w-96 mx-auto mb-8"></div>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} className="h-32 bg-muted rounded-lg"></div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LoadingComponent />
     );
   }
 

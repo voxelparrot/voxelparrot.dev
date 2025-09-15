@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import type { Project } from "@shared/schema";
 import { motion } from "framer-motion";
+import LoadingComponent from "@/components/LoadingComponent";
+import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 
 // Filter options
 const filterfeatured = ["All", "Featured"];
@@ -94,20 +96,10 @@ export default function ProjectsSection() {
 
   if (isLoading) {
     return (
-      <section
-        id="projects"
-        className="pt-28 px-4 sm:px-6 lg:px-8"
-        data-testid="projects-section"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="animate-pulse">
-              <div className="h-8 bg-muted rounded w-64 mx-auto mb-4"></div>
-              <div className="h-4 bg-muted rounded w-96 mx-auto"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div>
+      <LoadingComponent />
+      <CardsLoadingComponent />
+      </div>
     );
   }
 

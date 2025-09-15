@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Project } from "@shared/schema";
 import ReactMarkdown from "react-markdown";
+import CardsLoadingComponent from "@/components/CardsLoadingComponent"
 
 interface FeaturedProjectsProps {
   setActiveTab: (tabId: string) => void;

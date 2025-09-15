@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import QuestCard from "./QuestCard";
 import type { Quest } from "@shared/schema";
 import { motion } from "framer-motion";
+import LoadingComponent from "@/components/LoadingComponent";
+import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 
 export default function QuestsSection() {
   const [quests, setQuests] = useState<Quest[]>([]);
@@ -62,12 +64,10 @@ export default function QuestsSection() {
 
   if (isLoading) {
     return (
-      <section id="cognata" className="pt-28 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center animate-pulse">
-          <div className="h-8 bg-muted rounded w-64 mx-auto mb-4"></div>
-          <div className="h-4 bg-muted rounded w-96 mx-auto"></div>
-        </div>
-      </section>
+        <div>
+      <LoadingComponent />
+      <CardsLoadingComponent />
+      </div>
     );
   }
 
