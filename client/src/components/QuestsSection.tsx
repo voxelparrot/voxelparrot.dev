@@ -114,7 +114,7 @@ export default function QuestsSection() {
         </div>
 
         {/* Quest Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8">
           {filteredQuests.map((quest, index) => (
             <QuestCard
               key={quest.id}

@@ -1,0 +1,13 @@
+{
+  "name": "Battle Turrets",
+  "description": "Small tower defense game made in scratch.",
+  "extendedDescription": "A very unbalanced tower defense game I made in Scratch during February 2023\n\n> Level Select:\n\nClick on the level you would like to play.\n\n> In - Game:\n\nSelect open shop. \n\nSelect the turret you would like to buy. \n(Unaffordable turrets will be colored gray with a ?.)\n\nClick to place the turret where you would like to place it. \n(To cancel, click on the red X button in the bottom left.)\n\nClick Next wave. Wait for the wave to end. Repeat placing turrets and selecting next wave. (Every enemy/wave defeated will give you money.)",
+  "type": "Game",
+  "imageUrl": "battleturretsscreenshot.png",
+  "links": {
+    "play": "https://voxelparrot.github.io/battle-turrets/"
+  },
+  "tags": ["Misc", "Website", "Game"],
+  "version": "v0.9.6",
+  "featured": "false"
+}

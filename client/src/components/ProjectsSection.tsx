@@ -19,7 +19,7 @@ const filtertags = [
 ];
 
 export default function ProjectsSection() {
-  const [selectedCategory, setSelectedCategory] = useState("Featured");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -210,7 +210,7 @@ export default function ProjectsSection() {
 
         {/* Project Grid */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8"
           data-testid="projects-grid"
         >
           {filteredProjects.map((project, index) => (
