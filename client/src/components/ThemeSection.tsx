@@ -1,4 +1,10 @@
 import { useEffect, useState } from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { useTheme } from "@/context/ThemeContext";
 
 export default function ThemeSection() {
@@ -32,12 +38,21 @@ export default function ThemeSection() {
         <h1 className="font-bold">
         Theme Customization
         </h1>
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className="pixel-button-9slice mb-8"
-        >
-          {isDark ? "🌙 Switch to Dark Mode 🌙" : "☀️ Switch to Light Mode ☀️"}
-        </button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button
+                  onClick={() => setIsDark(!isDark)}
+                  className="pixel-button-9slice mb-8"
+                >
+                  {isDark ? "🌙 Switch to Dark Mode 🌙" : "☀️ Switch to Light Mode ☀️"}
+                </button>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>Brace Yourself</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
         {/* Hue slider */}
         <div>
