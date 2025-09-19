@@ -36,30 +36,30 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
         >
           <div
             className="bg-card border border-border rounded-lg p-6 hover-lift"
-            data-testid="category-mod-development"
+            data-testid="category-a"
           >
             <h3 className="pixel-text text-sm font-bold text-primary mb-3">
-              Material Ascension
+              Particle Timer
             </h3>
 
             <ul className="text-sm text-muted-foreground space-y-2">
               <a
-                href="https://modrinth.com/project/material-ascension"
+                href="https://github.com/voxelparrot/particle-timer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
-                data-testid="link-modrinth"
+                data-testid="link-github"
               >
-                Modrinth
+                Github
               </a>
-              <li>• Many custom weapons</li>
-              <li>• Advanced recipe systems</li>
+              <li>• Particle System</li>
+              <li>• Visuals</li>
             </ul>
           </div>
 
           <div
             className="bg-card border border-border rounded-lg p-6 hover-lift"
-            data-testid="category-modpack-design"
+            data-testid="category-b"
           >
             <h3 className="pixel-text text-sm font-bold text-primary mb-3">
               Cognata
@@ -81,7 +81,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
 
           <div
             className="bg-card border border-border rounded-lg p-6 hover-lift"
-            data-testid="category-community-management"
+            data-testid="category-c"
           >
             <h3 className="pixel-text text-sm font-bold text-primary mb-3">
               voxelparrot.dev
