@@ -24,6 +24,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
     { id: "home", title: "Home" },
     { id: "projects", title: "Projects" },
     { id: "cognata", title: "Cognata" },
+    { id: "theme", title: "Theme" },
   ];
 
   useEffect(() => {

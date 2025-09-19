@@ -2,6 +2,7 @@ import IntroSection from "@/components/IntroSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import ProjectsSection from "@/components/ProjectsSection";
 import QuestsSection from "@/components/QuestsSection";
+import ThemeSection from "@/components/ThemeSection";
 import NotFound from "@/components/NotFound";
 
 interface TabContentProps {
@@ -31,6 +32,11 @@ export default function TabContent({ activeTab, setActiveTab }: TabContentProps)
       id: "cognata",
       title: "Cognata",
       components: [<QuestsSection key="quests-section" />],
+    },
+    {
+      id: "theme",
+      title: "Theme",
+      components: [<ThemeSection key="theme-section" />],
     },
   ];
 

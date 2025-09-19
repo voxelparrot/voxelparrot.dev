@@ -1,0 +1,13 @@
+{
+  "name": "Early Game Additions",
+  "description": "Adds content to add depth to the early game. Made for use in modpacks",
+  "extendedDescription": "# \uD83C\uDF33 Early Game Additions\nis a mod that adds content for modpack developers to use to add depth to their early game!\n\n### IMPORTANT!\nThis mod was originally made for the **Cognata** modpack, so its _original_ recipes require items from mods such as Create, Farmer's Delight and Twigs. However, these are marked as _optional_ dependencies because modpack developers can use datapacks or tools like CraftTweaker to change these recipes for their own.\n\n## \uD83D\uDDD2\uFE0F Content\n- Three stages of tree tap items (crude wood, copper, iron)\n- New crude wooden axe and shovel craftable in the inventory\n- Sap and Pitch Glue\n- A few extra advancements for vanilla and create (advancement for diamond pickaxe, crafting table, wooden pickaxe, etc) to supplement a slower rate of progression\n- Blowtorch\n\nYou can use this mod in your modpacks!\n",
+  "type": "Mod",
+  "imageUrl": "fogbanner.png",
+  "links": {
+    "modrinth": "https://modrinth.com/mod/early-game-additions"
+  },
+  "tags": ["Equipment", "Progression", "Cognata"],
+  "version": "v1.0.0",
+  "featured": "true"
+}

@@ -36,7 +36,7 @@ export default function QuestCard({
 
   return (
     <motion.div
-      className="bg-card border border-border rounded-lg overflow-hidden hover-lift flex flex-row items-center pixel-frame-9slice-dark"
+      className="bg-card border border-border rounded-lg overflow-hidden hover-lift flex flex-row items-center pixel-frame-9slice-dark dark"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}

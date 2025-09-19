@@ -6,25 +6,25 @@
 :root {
   --primary-hue: 210;
 
-  --background: hsl(var(--primary-hue), 13%, 9%);
-  --foreground: hsl(var(--primary-hue), 0%, 98%);
-  --card: hsl(var(--primary-hue), 13%, 9%, 0.8);
-  --card-foreground: hsl(var(--primary-hue), 0%, 98%);
-  --popover: hsl(var(--primary-hue), 13%, 9%);
-  --popover-foreground: hsl(var(--primary-hue), 0%, 98%);
-  --primary: hsl(var(--primary-hue), 70%, 70%);
-  --primary-foreground: hsl(var(--primary-hue), 13%, 9%);
-  --secondary: hsl(var(--primary-hue), 13%, 14%);
-  --secondary-foreground: hsl(var(--primary-hue), 0%, 98%);
-  --muted: hsl(var(--primary-hue), 13%, 14%, 0.6);
-  --muted-foreground: hsl(var(--primary-hue), 0%, 70%);
-  --accent: hsl(var(--primary-hue), 70%, 90%);
+  --background: hsl(var(--primary-hue), 0%, 98%);
+  --foreground: hsl(var(--primary-hue), 13%, 9%);
+  --card: hsl(var(--primary-hue), 0%, 100%, 0.8);
+  --card-foreground: hsl(var(--primary-hue), 13%, 9%);
+  --popover: hsl(var(--primary-hue), 0%, 100%);
+  --popover-foreground: hsl(var(--primary-hue), 13%, 9%);
+  --primary: hsl(var(--primary-hue), 13%, 9%);
+  --primary-foreground: hsl(var(--primary-hue), 0%, 98%);
+  --secondary: hsl(var(--primary-hue), 15%, 90%);
+  --secondary-foreground: hsl(var(--primary-hue), 13%, 9%);
+  --muted: hsl(var(--primary-hue), 20%, 94%);
+  --muted-foreground: hsl(var(--primary-hue), 0%, 40%);
+  --accent: hsl(var(--primary-hue), 69%, 50%);
   --accent-foreground: hsl(var(--primary-hue), 13%, 9%);
-  --destructive: hsl(var(--primary-hue), 91%, 54%);
+  --destructive: hsl(var(--primary-hue), 91%, 40%);
   --destructive-foreground: hsl(var(--primary-hue), 0%, 98%);
-  --border: hsl(var(--primary-hue), 13%, 20%);
-  --input: hsl(var(--primary-hue), 13%, 14%);
-  --ring: hsl(var(--primary-hue), 70%, 70%);
+  --border: hsl(var(--primary-hue), 15%, 85%);
+  --input: hsl(var(--primary-hue), 15%, 94%);
+  --ring: hsl(var(--primary-hue), 69%, 50%);
   --chart-1: hsl(var(--primary-hue), 70%, 50%);
   --chart-2: hsl(var(--primary-hue), 80%, 55%);
   --chart-3: hsl(var(--primary-hue), 93%, 45%);
@@ -45,28 +45,6 @@
   --radius: 0.75rem;
   --tracking-normal: 0em;
   --spacing: 0.25rem;
-}
-
-.light {
-  --background: hsl(var(--primary-hue), 0%, 98%);
-  --foreground: hsl(var(--primary-hue), 13%, 9%);
-  --card: hsl(var(--primary-hue), 0%, 100%, 0.8);
-  --card-foreground: hsl(var(--primary-hue), 13%, 9%);
-  --popover: hsl(var(--primary-hue), 0%, 100%);
-  --popover-foreground: hsl(var(--primary-hue), 13%, 9%);
-  --primary: hsl(var(--primary-hue), 69%, 60%);
-  --primary-foreground: hsl(var(--primary-hue), 0%, 80%);
-  --secondary: hsl(var(--primary-hue), 13%, 90%);
-  --secondary-foreground: hsl(var(--primary-hue), 13%, 13%);
-  --muted: hsl(var(--primary-hue), 20%, 70%);
-  --muted-foreground: hsl(var(--primary-hue), 0%, 40%);
-  --accent: hsl(var(--primary-hue), 13%, 80%);
-  --accent-foreground: hsl(var(--primary-hue), 13%, 9%);
-  --destructive: hsl(var(--primary-hue), 91%, 40%);
-  --destructive-foreground: hsl(var(--primary-hue), 0%, 98%);
-  --border: hsl(var(--primary-hue), 15%, 85%);
-  --input: hsl(var(--primary-hue), 15%, 94%);
-  --ring: hsl(var(--primary-hue), 69%, 50%);
 }
 
 .dark {
@@ -126,7 +104,7 @@
 }
 
 .brick-bg {
-  background-image: url('/assets/wall_back_dark.png');
+  background-image: url('/assets/wall_back_light.png');
   background-size: 300px 300px;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -137,17 +115,17 @@
   left: -50vw;
 }
 
-.light .brick-bg {
-  background-image: url('/assets/wall_back_light.png');
+.dark .brick-bg {
+  background-image: url('/assets/wall_back_dark.png');
 }
 
 .content-overlay {
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
 }
 
-.light .content-overlay {
-  background: rgb(255, 255, 255, 0.2);
+.dark .content-overlay {
+  background: rgb(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
 }
 
