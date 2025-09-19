@@ -20,6 +20,7 @@ export const projects = pgTable("projects", {
       curseforge?: string;
       github?: string;
       play?: string;
+      visit?: string;
     }>()
     .notNull()
     .default({}),

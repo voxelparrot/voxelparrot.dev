@@ -88,6 +88,17 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               Play <ExternalLink className="w-3 h-3" />
             </a>
           )}
+          {project.links.visit && (
+            <a
+              href={project.links.visit}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out inline-flex items-center gap-1"
+              data-testid={`link-github-${project.id}`}
+            >
+              Page <ExternalLink className="w-3 h-3" />
+            </a>
+          )}
           {project.links.modrinth && (
             <a
               href={project.links.modrinth}
@@ -215,6 +226,17 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                     className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/90 transition-all duration-300 ease-in-out inline-flex items-center gap-2"
                   >
                     <span>Play Game</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
+                {project.links.visit && (
+                  <a
+                    href={project.links.visit}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/90 transition-all duration-300 ease-in-out inline-flex items-center gap-2"
+                  >
+                    <span>Visit Page</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 )}

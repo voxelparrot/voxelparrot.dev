@@ -1,0 +1,14 @@
+{
+  "name": "Particle Timer",
+  "description": "A timer that is (mostly) entirely made with my own particle system.",
+  "extendedDescription": "A timer that is (mostly) entirely made with my own particle system.\n\nMade in Scratch",
+  "type": "Website",
+  "imageUrl": "particletimer.png",
+  "links": {
+    "github": "https://github.com/voxelparrot/particle-timer",
+    "visit": "https://voxelparrot.github.io/battle-turrets/"
+  },
+  "tags": ["Misc", "Website", "Tool"],
+  "version": "v1.0.0",
+  "featured": "true"
+}
