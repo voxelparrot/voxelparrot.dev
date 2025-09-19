@@ -53,7 +53,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
                 Github
               </a>
               <li>• Particle System</li>
-              <li>• Visuals</li>
+              <li>• Visual Design</li>
             </ul>
           </div>
 
