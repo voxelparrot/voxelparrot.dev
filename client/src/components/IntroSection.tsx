@@ -68,13 +68,14 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
           >
             View GitHub
           </a>
+          <div className="flex items-center justify-center gap-4">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
                   onClick={() => setActiveTab("cognata")}
                   className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
-                  data-testid="link-github"
+                  data-testid="link-cognata"
                 >
                   <img
                     src={`/assets/cognata_icon.png`}
@@ -89,6 +90,30 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href="https://voxelparrot.github.io/particle-timer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
+                  data-testid="link-timer"
+                >
+                  <img
+                    src={`/assets/particle_icon.png`}
+                    alt="Particle Timer Icon"
+                    className="w-13 h-13 min-w-[51px] shrink-0 object-cover image-pixelated objects-center"
+                    data-testid={`img-particle-icon`}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>Particle Timer</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          </div>
         </motion.div>
 
         <motion.div
