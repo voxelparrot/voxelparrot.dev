@@ -54,7 +54,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
         >
           <button
                   onClick={() => setActiveTab("projects")}
-            className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 ease-in-out pixel-text hover-scale"
+            className="bg-primary text-card px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 ease-in-out pixel-text hover-scale hover:shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
             data-testid="button-browse-projects"
           >
             Browse Projects
@@ -63,7 +63,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             href="https://github.com/voxelparrot"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-border text-foreground px-8 py-3 rounded-lg hover:bg-secondary transition-all duration-300 ease-in-out inline-block hover-scale pixel-text"
+            className="border border-border text-foreground px-8 py-3 rounded-lg hover:bg-secondary transition-all duration-300 ease-in-out inline-block hover-scale pixel-text hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
             data-testid="link-github"
           >
             View GitHub
@@ -74,7 +74,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               <TooltipTrigger asChild>
                 <a
                   onClick={() => setActiveTab("cognata")}
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(351_36%_51%/0.8)]"
                   data-testid="link-cognata"
                 >
                   <img
@@ -97,7 +97,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
                   href="https://voxelparrot.github.io/particle-timer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(149_91%_53%/0.8)]"
                   data-testid="link-timer"
                 >
                   <img
@@ -126,7 +126,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             href="https://modrinth.com/user/voxelparrot"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
             data-testid="link-modrinth"
           >
             Modrinth
@@ -135,7 +135,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             href="https://www.curseforge.com/members/parrot/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
             data-testid="link-curseforge"
           >
             CurseForge

@@ -54,7 +54,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
           <div className="flex items-center">
             <button
               onClick={() => setActiveTab("home")}
-              className="pixel-text text-primary text-sm hover:text-accent transition-all hover-scale"
+              className="pixel-text text-primary text-sm hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)]"
               data-testid="logo"
             >
               voxelparrot
@@ -67,7 +67,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`text-foreground hover:text-accent transition-all hover-scale ${
+                  className={`text-foreground hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)] ${
                     activeTab === tab.id ? "glow-effect-class" : ""
                   }`}
                   onClick={() => setActiveTab(tab.id)}
@@ -96,7 +96,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`block w-full text-left px-3 py-2 text-foreground hover:text-accent transition-all hover-scale ${
+                  className={`block w-full text-left px-3 py-2 text-foreground hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)] ${
                     activeTab === tab.id ? "glow-effect-class" : ""
                   }`}
                   onClick={() => setActiveTab(tab.id)}

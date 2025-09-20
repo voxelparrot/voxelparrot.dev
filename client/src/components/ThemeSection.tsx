@@ -33,7 +33,7 @@ export default function ThemeSection() {
   }, [hue]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen dark">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col p-4 space-y-4 rounded-lg shadow-md w-96 pixel-frame-9slice-dark">
         <h1 className="font-bold">
         Theme Customization
@@ -45,7 +45,7 @@ export default function ThemeSection() {
                   onClick={() => setIsDark(!isDark)}
                   className="pixel-button-9slice mb-8"
                 >
-                  {isDark ? "🌙 Switch to Dark Mode 🌙" : "☀️ Switch to Light Mode ☀️"}
+                  {isDark ? "Switch to Dark Mode" : "Switch to Light Mode"}
                 </button>
               </TooltipTrigger>
               <TooltipContent side="top">
