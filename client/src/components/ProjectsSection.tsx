@@ -162,7 +162,7 @@ export default function ProjectsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-lg text-sm pixel-text transition-all duration-300 ease-in-out hover-scale ${
+              className={`px-6 py-3 rounded-lg text-card pixel-text transition-all duration-300 ease-in-out hover-scale ${
                 selectedCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
