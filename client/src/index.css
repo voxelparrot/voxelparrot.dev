@@ -125,6 +125,14 @@
   transform: translateZ(0);
 }
 
+.chain-bg {
+  background-image: url('/assets/chain.png');
+  background-size: 24px 64px;
+  background-repeat: repeat;
+  opacity: 1.0;
+  height: 999vh;
+}
+
 .brick-bg {
   background-image: url('/assets/wall_back_dark.png');
   background-size: 300px 300px;
@@ -142,13 +150,13 @@
 }
 
 .content-overlay {
-  background: rgb(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
+  background: rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
 }
 
 .light .content-overlay {
-  background: rgb(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
+  background: rgb(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
 }
 
 .pixel-text {
