@@ -164,8 +164,8 @@ export default function ProjectsSection() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-lg text-card pixel-text transition-all duration-300 ease-in-out hover-scale ${
                 selectedCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
+                  ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+                  : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
               }`}
               data-testid={`filter-${category.toLowerCase()}`}
             >
@@ -183,7 +183,11 @@ export default function ProjectsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`border border-border text-foreground pixel-text px-4 py-2 rounded-lg hover:bg-secondary transition-all duration-300 ease-in-out inline-block hover-scale`}
+              className={`inline-block px-2 py-1 rounded-lg font-bold transition-all duration-300 ease-in-out hover-scale ${
+                selectedCategory === category
+                  ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+                  : "text-secondary-foreground hover:bg-accent hover:bg-secondary hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
+              }`}
               data-testid={`filter-${category.toLowerCase()}`}
             >
               {category}
@@ -200,7 +204,11 @@ export default function ProjectsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`text-foreground px-2 py-1 rounded-lg hover:bg-secondary transition-all duration-300 ease-in-out inline-block hover-scale`}
+              className={`inline-block px-2 py-1 rounded-lg transition-all duration-300 ease-in-out hover-scale ${
+                selectedCategory === category
+                  ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+                  : "text-secondary-foreground hover:bg-accent hover:bg-secondary hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
+              }`}
               data-testid={`filter-${category.toLowerCase()}`}
             >
               {category}
