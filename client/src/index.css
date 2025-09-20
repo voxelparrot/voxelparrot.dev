@@ -56,12 +56,12 @@
   --popover-foreground: hsl(var(--primary-hue), 13%, 9%);
   --primary: hsl(var(--primary-hue), 69%, 60%);
   --primary-foreground: hsl(var(--primary-hue), 0%, 80%);
-  --secondary: hsl(var(--primary-hue), 13%, 90%);
+  --secondary: hsl(var(--primary-hue), 0%, 90%);
   --secondary-foreground: hsl(var(--primary-hue), 13%, 13%);
   --muted: hsl(var(--primary-hue), 20%, 70%);
   --muted-foreground: hsl(var(--primary-hue), 0%, 40%);
-  --accent: hsl(var(--primary-hue), 13%, 80%);
-  --accent-foreground: hsl(var(--primary-hue), 13%, 9%);
+  --accent: hsl(var(--primary-hue), 0%, 80%);
+  --accent-foreground: hsl(var(--primary-hue), 0%, 9%);
   --destructive: hsl(var(--primary-hue), 91%, 40%);
   --destructive-foreground: hsl(var(--primary-hue), 0%, 98%);
   --border: hsl(var(--primary-hue), 15%, 85%);
@@ -127,10 +127,15 @@
 
 .chain-bg {
   background-image: url('/assets/chain.png');
+  image-rendering: pixelated;
   background-size: 24px 64px;
   background-repeat: repeat;
   opacity: 1.0;
   height: 999vh;
+}
+
+.light .chain-bg {
+  background-image: url('/assets/chain-l.png');
 }
 
 .brick-bg {
