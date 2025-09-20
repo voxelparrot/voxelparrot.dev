@@ -126,7 +126,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             href="https://modrinth.com/user/voxelparrot"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-card transition-all duration-300 ease-in-out pixel-text hover:shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
             data-testid="link-modrinth"
           >
             Modrinth
@@ -135,7 +135,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             href="https://www.curseforge.com/members/parrot/projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+            className="text-xs bg-secondary text-secondary-foreground px-4 py-2 rounded hover:bg-primary hover:text-card transition-all duration-300 ease-in-out pixel-text hover:shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
             data-testid="link-curseforge"
           >
             CurseForge
