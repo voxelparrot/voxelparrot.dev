@@ -1,11 +1,11 @@
 {
   "name": "Cognata Guide",
   "description": "The guidebook for the Cognata modpack, (in)complete with step-by-step progression information!",
-  "extendedDescription": "The guidebook for the Cognata modpack...\n\nIt doesn't exist yet lol",
+  "extendedDescription": "The guidebook for the Cognata modpack...\n\n**Find information about parts of the Cognata modpack.**\nEntries are sorted mostly in the order in which you would encounter them going through progression normally.",
   "type": "Website",
-  "imageUrl": "fogbanner.png",
+  "imageUrl": "cognataguide.png",
   "links": {
-    "none": "true"
+    "visit": "https://voxelparrot.dev/#cognata"
   },
   "tags": ["Guide", "Website", "Misc"],
   "version": "v0.0.0",
