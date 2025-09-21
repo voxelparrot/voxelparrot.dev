@@ -4,6 +4,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import QuestsSection from "@/components/QuestsSection";
 import ThemeSection from "@/components/ThemeSection";
 import NotFound from "@/components/NotFound";
+import Footer from "@/components/Footer";
 
 interface TabContentProps {
   activeTab: string;
@@ -21,17 +22,17 @@ export default function TabContent({ activeTab, setActiveTab }: TabContentProps)
     {
       id: "home",
       title: "Home",
-      components: [<IntroSection key="intro-section" setActiveTab={setActiveTab} />, <FeaturedProjects key="featured-projects" setActiveTab={setActiveTab} />],
+      components: [<IntroSection key="intro-section" setActiveTab={setActiveTab} />, <FeaturedProjects key="featured-projects" setActiveTab={setActiveTab} />, <Footer key="home-footer" />],
     },
     {
       id: "projects",
       title: "Projects",
-      components: [<ProjectsSection key="projects-section" />],
+      components: [<ProjectsSection key="projects-section" />, <Footer key="projects-footer" />],
     },
     {
       id: "cognata",
       title: "Cognata",
-      components: [<QuestsSection key="quests-section" />],
+      components: [<QuestsSection key="quests-section" />, <Footer key="cognata-footer" />],
     },
     {
       id: "theme",

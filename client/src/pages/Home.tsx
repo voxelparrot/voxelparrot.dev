@@ -4,7 +4,6 @@ import IntroSection from "@/components/IntroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import TabsSection from "@/components/TabsSection";
-import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import QuestsSection from "@/components/QuestsSection";
 import TabContent from "@/components/TabContent";
@@ -44,7 +43,6 @@ export default function Home() {
 
       <main className="relative z-10 content-overlay min-h-screen">
         <TabContent activeTab={activeTab} setActiveTab={handleSetActiveTab} />
-        <Footer />
       </main>
     </div>
   );
