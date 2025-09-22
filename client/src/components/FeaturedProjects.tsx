@@ -2,6 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import type { Project } from "@shared/schema";
 import ReactMarkdown from "react-markdown";
 import CardsLoadingComponent from "@/components/CardsLoadingComponent"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface FeaturedProjectsProps {
   setActiveTab: (tabId: string) => void;
@@ -47,10 +53,19 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
                 href="https://github.com/voxelparrot/particle-timer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text mr-2"
                 data-testid="link-github"
               >
                 Github
+              </a>
+              <a
+                href="https://voxelparrot.github.io/particle-timer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+                data-testid="link-github"
+              >
+                Visit
               </a>
               <li>• Particle System</li>
               <li>• Visual Design</li>
@@ -65,6 +80,14 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               Cognata
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
+              <a
+                href="/#cognata"
+                rel="noopener noreferrer"
+                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text mr-2"
+                data-testid="featured-link-modrinth"
+              >
+                Guide
+              </a>
               <a
                 href="https://modrinth.com/project/cognata"
                 target="_blank"
@@ -91,11 +114,28 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
                 href="https://github.com/voxelparrot/voxelparrot.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text mr-2"
                 data-testid="featured-link-domain"
               >
                 Github
               </a>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+              <a
+                href="https://voxelparrot.dev"
+                rel="noopener noreferrer"
+                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
+                data-testid="featured-link-domain"
+              >
+                Visit
+              </a>
+                  </TooltipTrigger>
+                  <TooltipContent side="top">
+                    <p>Reloads the page</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <li>• Documentation</li>
               <li>• Project information</li>
             </ul>
