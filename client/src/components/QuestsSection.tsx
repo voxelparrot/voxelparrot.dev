@@ -87,8 +87,17 @@ export default function QuestsSection() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}>
             Find information about parts of the Cognata modpack.
-            <p className="font-light">
+            <p className="font-light mt-4">
             Entries are sorted mostly in the order in which you would encounter them going through progression normally.
+            </p>
+            <p className="font-light mt-4">
+            Clicking on one of the related items of an entry will search for that item.
+            </p>
+            <p className="mt-4">
+            THIS GUIDE IS INCOMPLETE!
+            </p>
+            <p className="font-light">
+            However, it should provide enough information for you to get at least to the Nether.
             </p>
           </motion.p>
         </div>
