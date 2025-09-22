@@ -74,7 +74,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               <TooltipTrigger asChild>
                 <a
                   onClick={() => setActiveTab("cognata")}
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(351_36%_51%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(351_91%_65%/0.8)]"
                   data-testid="link-cognata"
                 >
                   <img
