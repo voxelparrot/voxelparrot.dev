@@ -54,7 +54,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
           <div className="flex items-center">
             <button
               onClick={() => setActiveTab("home")}
-              className="pixel-text text-primary text-sm hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)]"
+              className="voxel-text text-primary text-sm hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)]"
               data-testid="logo"
             >
               voxelparrot

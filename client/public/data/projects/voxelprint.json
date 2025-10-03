@@ -1,0 +1,13 @@
+{
+  "name": "Voxelprint",
+  "description": "Pixel font I made for fun",
+  "extendedDescription": "A pixel-style font I made for fun\n\nI also decided to use it around this website! You may recognize it in some places",
+  "type": "Font",
+  "imageUrl": "voxelprintbanner.png",
+  "links": {
+    "visit": "https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=19157"
+  },
+  "tags": ["Font", "Misc"],
+  "version": "v1.0.0",
+  "featured": "true"
+}

@@ -2,6 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Voxelprint"; /* any name you choose */
+  src: url("/fonts/voxelprint.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --primary-hue: 210;
@@ -42,6 +48,7 @@
   --font-serif: 'Fira Code', monospace;
   --font-mono: 'JetBrains Mono', monospace;
   --font-pixel: 'Silkscreen', monospace;
+  --font-voxel: 'Voxelprint', monospace;
   --radius: 0.75rem;
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -167,6 +174,13 @@
 .pixel-text {
   font-family: var(--font-pixel);
   line-height: 1.6;
+}
+
+.voxel-text {
+  font-family: var(--font-voxel);
+  line-height: 1.6;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .hover-lift {

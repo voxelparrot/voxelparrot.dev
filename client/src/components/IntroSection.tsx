@@ -27,7 +27,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
     >
       <div className="max-w-7xl mx-auto text-center">
         <motion.h1
-          className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6"
+          className="voxel-text text-2xl md:text-4xl font-bold text-primary mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

@@ -23,7 +23,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2
-            className="pixel-text text-xl md:text-2xl font-bold text-primary mb-4"
+            className="voxel-text text-xl md:text-2xl font-bold text-primary mb-4"
             data-testid="skills-title"
           >
             Featured Projects
@@ -44,7 +44,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-a"
           >
-            <h3 className="pixel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
               Particle Timer
             </h3>
 
@@ -76,7 +76,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-b"
           >
-            <h3 className="pixel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
               Cognata
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
@@ -106,7 +106,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-c"
           >
-            <h3 className="pixel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
               voxelparrot.dev
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
