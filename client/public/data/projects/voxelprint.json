@@ -5,7 +5,7 @@
   "type": "Font",
   "imageUrl": "voxelprintbanner.png",
   "links": {
-    "visit": "https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=19157"
+    "none": "true"
   },
   "tags": ["Font", "Misc"],
   "version": "v1.0.0",
