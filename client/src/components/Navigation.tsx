@@ -40,7 +40,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection("about")}
-              className="pixel-text text-primary text-sm hover:text-accent transition-all hover-scale"
+              className="voxel-text text-primary text-sm hover:text-accent transition-all hover-scale"
               data-testid="logo"
             >
               voxelparrot

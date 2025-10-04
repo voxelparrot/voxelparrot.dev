@@ -63,7 +63,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         <h3
-          className="text-xl font-bold mb-2"
+          className="voxel-text-l font-bold text-xl font-bold mb-2"
           data-testid={`title-project-${project.id}`}
         >
           {project.name}
@@ -152,7 +152,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
         <button
           onClick={() => setIsOpen(true)}
-          className="w-full bg-primary text-card py-2 rounded hover:bg-primary/90 transition-all duration-300 ease-in-out hover-lift"
+          className="hover:font-bold w-full bg-primary text-card py-2 rounded hover:bg-primary/90 transition-all duration-300 ease-in-out hover-scale hover:shadow-[0_0_16px_hsl(var(--primary-hue)_91%_53%/0.8)]"
           data-testid={`button-view-details-${project.id}`}
         >
           View Details

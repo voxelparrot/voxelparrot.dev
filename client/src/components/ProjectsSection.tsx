@@ -8,7 +8,8 @@ import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 // Filter options
 const filterfeatured = ["All", "Featured"];
 const filtertype = ["Mods", "Modpacks", "Resource Packs", "Website", "Other"];
-const filtertags = [
+const filtertags = [];
+const filtermods = [
   "Blocks",
   "Equipment",
   "Mobs",
@@ -17,13 +18,38 @@ const filtertags = [
   "Food",
   "Cognata",
 ];
+const filterrps = [
+  "Blocks",
+  "Equipment",
+  "Decoration",
+  "Food",
+  "Cognata",
+];
+const filtermisc = [
+  "Tool",
+  "Font",
+  "Game",
+  "Guide",
+  "Server",
+];
+
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedTag, setSelectedTag] = useState("Blocks");
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
+
+
+  const filterMap: Record<string, string[]> = {
+      "Mods": filtermods,
+      "Resource Packs": filterrps,
+      "Other": filtermisc
+  };
+
+  const activeTags = filterMap[selectedCategory] || filtertags;
 
   useEffect(() => {
     async function fetchProjects() {
@@ -51,47 +77,44 @@ export default function ProjectsSection() {
   useEffect(() => {
     if (!projects.length) return;
 
-    // Start with all projects
     let filtered = projects;
 
-    // Category / type / tag filtering
     if (selectedCategory && selectedCategory !== "All") {
-      filtered = filtered.filter((p) => {
-        // Featured
-        if (selectedCategory === "Featured") return p.featured === "true";
-
-        // Type filters
-        if (filtertype.includes(selectedCategory)) {
-          switch (selectedCategory) {
-            case "Mods":
-              return p.type === "Mod";
-            case "Modpacks":
-              return p.type === "Modpack";
-            case "Resource Packs":
-              return p.type === "Resource Pack";
-            case "Other":
-              return p.tags.includes("Misc");
-          }
+      if (selectedCategory === "Featured") {
+        filtered = filtered.filter((p) => p.featured === "true");
+      } else if (filtertype.includes(selectedCategory)) {
+        switch (selectedCategory) {
+          case "Mods":
+            filtered = filtered.filter((p) => p.type === "Mod");
+            break;
+          case "Modpacks":
+            filtered = filtered.filter((p) => p.type === "Modpack");
+            break;
+          case "Resource Packs":
+            filtered = filtered.filter((p) => p.type === "Resource Pack");
+            break;
+          case "Other":
+            filtered = filtered.filter((p) => p.tags.includes("Misc"));
+            break;
         }
-
-        // Tag filters
-        if (filtertags.includes(selectedCategory)) {
-          return p.tags.includes(selectedCategory);
-        }
-
-        return true;
-      });
+      }
     }
 
-    // Search filtering (applied after category/tag filter)
+    if (selectedTag && activeTags.includes(selectedTag)) {
+      filtered = filtered.filter((p) => p.tags.includes(selectedTag));
+    }
+
     if (searchQuery.trim() !== "") {
       filtered = filtered.filter((p) =>
-        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+        p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.type.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
 
     setFilteredProjects(filtered);
-  }, [projects, selectedCategory, searchQuery]);
+  }, [projects, selectedCategory, selectedTag, searchQuery]);
+
 
 
   if (isLoading) {
@@ -112,7 +135,7 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <motion.h1
-                    className="pixel-text text-2xl md:text-4xl font-bold text-primary mb-6"
+                    className="voxel-text text-2xl md:text-4xl font-bold text-primary mb-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -162,7 +185,7 @@ export default function ProjectsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-lg text-card pixel-text transition-all duration-300 ease-in-out hover-scale ${
+              className={`px-4 py-2 rounded-lg font-bold text-card voxel-text transition-all duration-300 ease-in-out hover-scale ${
                 selectedCategory === category
                   ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
                   : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
@@ -183,10 +206,10 @@ export default function ProjectsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`inline-block px-2 py-1 rounded-lg font-bold transition-all duration-300 ease-in-out hover-scale ${
+              className={`inline-block rounded-lg px-2 transition-all duration-300 ease-in-out hover-scale ${
                 selectedCategory === category
-                  ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
-                  : "text-secondary-foreground hover:bg-accent hover:bg-secondary hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
+                  ? "bg-primary text-card py-0 voxel-text-sm font-bold shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+                  : "text-secondary-foreground py-1 voxel-text-sm hover:bg-secondary hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
               }`}
               data-testid={`filter-${category.toLowerCase()}`}
             >
@@ -200,18 +223,20 @@ export default function ProjectsSection() {
           className="flex flex-wrap justify-center gap-2 mb-8"
           data-testid="project-filters"
         >
-          {filtertags.map((category) => (
+          {activeTags.map((tag) => (
             <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`inline-block px-2 py-1 rounded-lg transition-all duration-300 ease-in-out hover-scale ${
-                selectedCategory === category
-                  ? "bg-primary text-card shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
-                  : "text-secondary-foreground hover:bg-accent hover:bg-secondary hover:shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%/0.8)]"
+              key={tag}
+              onClick={() =>
+                setSelectedTag(selectedTag === tag ? "" : tag)
+              }
+              className={`px-2 voxel-text-xs transition-all duration-300 ease-in-out hover-scale ${
+                selectedTag === tag
+                  ? "text-primary font-bold drop-shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+                  : "text-secondary-foreground hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_9%_70%)]"
               }`}
-              data-testid={`filter-${category.toLowerCase()}`}
+              data-testid={`filter-${tag.toLowerCase()}`}
             >
-              {category}
+              {tag}
             </button>
           ))}
         </div>

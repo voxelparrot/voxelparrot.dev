@@ -44,7 +44,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-a"
           >
-            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm text-primary mb-3">
               Particle Timer
             </h3>
 
@@ -58,15 +58,6 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <a
-                href="https://voxelparrot.github.io/particle-timer"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
-                data-testid="link-github"
-              >
-                Visit
-              </a>
               <li>• Particle System</li>
               <li>• Visual Design</li>
             </ul>
@@ -76,18 +67,10 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-b"
           >
-            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm text-primary mb-3">
               Cognata
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
-              <a
-                href="/#cognata"
-                rel="noopener noreferrer"
-                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text mr-2"
-                data-testid="featured-link-modrinth"
-              >
-                Guide
-              </a>
               <a
                 href="https://modrinth.com/project/cognata"
                 target="_blank"
@@ -106,7 +89,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-c"
           >
-            <h3 className="voxel-text text-sm font-bold text-primary mb-3">
+            <h3 className="voxel-text text-sm text-primary mb-3">
               voxelparrot.dev
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
@@ -119,23 +102,6 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-              <a
-                href="https://voxelparrot.dev"
-                rel="noopener noreferrer"
-                className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text"
-                data-testid="featured-link-domain"
-              >
-                Visit
-              </a>
-                  </TooltipTrigger>
-                  <TooltipContent side="top">
-                    <p>Reloads the page</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
               <li>• Documentation</li>
               <li>• Project information</li>
             </ul>

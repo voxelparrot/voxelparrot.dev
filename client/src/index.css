@@ -4,7 +4,13 @@
 @tailwind utilities;
 @font-face {
   font-family: "Voxelprint"; /* any name you choose */
-  src: url("/fonts/voxelprint.ttf") format("truetype");
+  src: url("/fonts/voxelprint-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Voxelprint"; /* any name you choose */
+  src: url("/fonts/voxelprint-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -176,11 +182,32 @@
   line-height: 1.6;
 }
 
+.voxel-text-l {
+  font-family: var(--font-voxel);
+  line-height: 1.6;
+  font-size: 1.4rem;
+  letter-spacing: 0.11rem;
+}
+
 .voxel-text {
   font-family: var(--font-voxel);
   line-height: 1.6;
   font-size: 1.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.voxel-text-sm {
+  font-family: var(--font-voxel);
+  line-height: 1.6;
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
+}
+
+.voxel-text-xs {
+  font-family: var(--font-voxel);
+  line-height: 1.6;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
 }
 
 .hover-lift {
