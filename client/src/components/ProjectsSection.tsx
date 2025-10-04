@@ -7,7 +7,7 @@ import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 
 // Filter options
 const filterfeatured = ["All", "Featured"];
-const filtertype = ["Mods", "Modpacks", "Resource Packs", "Website", "Other"];
+const filtertype = ["Mods", "Modpacks", "Resource Packs", "Websites", "Other"];
 const filtertags = [];
 const filtermods = [
   "Blocks",
@@ -92,6 +92,9 @@ export default function ProjectsSection() {
             break;
           case "Resource Packs":
             filtered = filtered.filter((p) => p.type === "Resource Pack");
+            break;
+          case "Websites":
+            filtered = filtered.filter((p) => p.type === "Website");
             break;
           case "Other":
             filtered = filtered.filter((p) => p.tags.includes("Misc"));
