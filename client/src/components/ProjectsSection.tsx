@@ -36,7 +36,7 @@ const filtermisc = [
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedTag, setSelectedTag] = useState("Blocks");
+  const [selectedTag, setSelectedTag] = useState("");
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
