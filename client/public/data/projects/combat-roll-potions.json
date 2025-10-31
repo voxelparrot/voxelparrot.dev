@@ -1,0 +1,13 @@
+{
+  "name": "Combat Roll Potions",
+  "description": "Adds potion effects that upgrade your rolling from the Combat Roll mod",
+  "extendedDescription": "Requires [Combat Roll](https://modrinth.com/mod/combat-roll)\n\n# Combat Roll Potions\n\nThis mod adds three potions that upgrade your rolling abilities.\n\n### Agility Potion\n\n![Agility Effect Icon](https://cdn.modrinth.com/data/cached_images/93177e557f611bdffa029a60666e594034059803.png)\n\nThe agility potion is brewed with an awkward potion and leather boots. It temporarily increases the distance of each roll by two blocks for each level.\n\n### Recovery Potion\n![Recovery Effect Icon](https://cdn.modrinth.com/data/cached_images/5c915e0a09def112c27ec5d188db8f0619c8c875.png)\n\nThe recovery potion is brewed with an awkward potion and an amethyst shard. It temporarily increases the speed at which you recharge rolls.\n\n### Stamina Potion\n\n![Stamina Effect Icon](https://cdn.modrinth.com/data/cached_images/39064a961c46cff30032f91d1b11b248af9f2231.png)\n\nThe stamina potion is brewed with an awkward potion and a feather. It temporarily increases the maximum level of rolls you can have charged at once, increasing by one per level of the effect.\n\nFeel free to use this in any modpacks.",
+  "type": "Mod",
+  "imageUrl": "crpotionsicon.png",
+  "links": {
+    "modrinth": "https://modrinth.com/mod/combat-roll-potions"
+  },
+  "tags": ["Equipment", "Food"],
+  "version": "v1.0.0",
+  "featured": "false"
+}
