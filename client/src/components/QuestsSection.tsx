@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 import LoadingComponent from "@/components/LoadingComponent";
 import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 
-export default function QuestsSection() {
+interface QuestsSectionProps {
+  setActiveTab: (tabId: string) => void;
+}
+
+export default function QuestsSection({ setActiveTab }: QuestsSectionProps) {
   const [quests, setQuests] = useState<Quest[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
@@ -96,9 +100,19 @@ export default function QuestsSection() {
             <p className="mt-4">
             THIS GUIDE IS INCOMPLETE!
             </p>
-            <p className="font-light">
+            <p className="font-light mt-4">
             However, it should provide enough information for you to get at least to the Nether.
             </p>
+            <p className="mt-4">
+            You can view material stats on this page:
+            </p>
+          <button
+                  onClick={() => setActiveTab("stats")}
+            className="mt-2 font-light bg-primary text-card px-4 py-2 rounded-lg hover:bg-primary/90 transition-all duration-300 ease-in-out pixel-text hover-scale hover:shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+            data-testid="button-cognata-stats"
+          >
+            View Material Stats
+          </button>
           </motion.p>
         </div>
 

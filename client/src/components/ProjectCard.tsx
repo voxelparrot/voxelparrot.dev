@@ -154,6 +154,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           onClick={() => setIsOpen(true)}
           className="hover:font-bold w-full bg-primary text-card py-2 rounded hover:bg-primary/90 transition-all duration-300 ease-in-out hover-scale hover:shadow-[0_0_16px_hsl(var(--primary-hue)_91%_53%/0.8)]"
           data-testid={`button-view-details-${project.id}`}
+          href={`#projects/${project.id}`}
+
         >
           View Details
         </button>

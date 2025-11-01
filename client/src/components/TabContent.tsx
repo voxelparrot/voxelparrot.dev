@@ -3,6 +3,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import ProjectsSection from "@/components/ProjectsSection";
 import QuestsSection from "@/components/QuestsSection";
 import ThemeSection from "@/components/ThemeSection";
+import StatsSection from "@/components/StatsSection";
 import NotFound from "@/components/NotFound";
 import Footer from "@/components/Footer";
 
@@ -32,7 +33,12 @@ export default function TabContent({ activeTab, setActiveTab }: TabContentProps)
     {
       id: "cognata",
       title: "Cognata",
-      components: [<QuestsSection key="quests-section" />, <Footer key="cognata-footer" />],
+      components: [<QuestsSection key="quests-section" setActiveTab={setActiveTab} />, <Footer key="cognata-footer" />],
+    },
+    {
+      id: "stats",
+      title: "Cognata Material Stats",
+      components: [<StatsSection key="stats-section" setActiveTab={setActiveTab} />, <Footer key="cognata-footer" />],
     },
     {
       id: "theme",
