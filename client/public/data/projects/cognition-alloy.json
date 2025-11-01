@@ -3,7 +3,7 @@
   "description": "Adds a new material: Cognition Alloy, as well as ores, items, a Cognition Shield, and related blocks",
   "extendedDescription": "> Made for the **[Cognata](https://modrinth.com/modpack/cognata)** modpack\n\n## This mod adds a new material to find in your world!\n\nIntroducing the ***Cognition Ore***, an extremely rare ore that you can find in the deepest and highest parts of the world.\n\nThis ore can be mined with a diamond pickaxe or higher to obtain Cognition Shards. Four of these can be crafted with four diamonds, similarly to netherite scrap with gold, to create an ingot of Cognition Alloy. Cognition Alloy can be blasted into Cognition Gems, which are used to create a Cognition Shield.\n\nThe mod also adds two new decorative blocks - the Block of Cognition Shards and the Block of Cognition Alloy. Both of these blocks are highly resistant to explosions and are difficult to break (although neither as much as obsidian), making them nice blocks to decorate a base with.",
   "type": "Mod",
-  "imageUrl": "cognition-showcase.png",
+  "imageUrl": "cognition_showcase.png",
   "links": {
     "modrinth": "https://modrinth.com/mod/cognition-alloy"
   },
