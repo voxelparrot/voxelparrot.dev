@@ -14,6 +14,13 @@ export default function StatsSection({ setActiveTab }: StatsSectionProps) {
 
   return (
     <section id="stats" className="pt-28 px-4 sm:px-6 lg:px-8">
+          <button
+            onClick={() => setActiveTab("cognata")}
+            className="mb-2 font-light bg-primary text-card px-4 py-2 rounded-lg hover:bg-primary/90 transition-all duration-300 ease-in-out pixel-text hover-scale hover:shadow-[0_0_15px_hsl(var(--primary-hue)_100%_50%/0.8)]"
+            data-testid="button-cognata-stats"
+          >
+            Back
+          </button>
         <div className="overflow-x-auto mt-8 mb-8 text-center">
           <motion.h2
                     className="voxel-text font-bold text-2xl md:text-4xl font-bold text-primary mb-6"
@@ -26,18 +33,9 @@ export default function StatsSection({ setActiveTab }: StatsSectionProps) {
                               initial={{ opacity: 0, y: 20 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.8 }}>
-                      Find information about parts of the Cognata modpack.
+                      Tool/Weapon stats for all materials can be found here
                       <p className="font-light mt-4">
-                      Entries are sorted mostly in the order in which you would encounter them going through progression normally.
-                      </p>
-                      <p className="font-light mt-4">
-                      Clicking on one of the related items of an entry will search for that item.
-                      </p>
-                      <p className="mt-4">
-                      THIS GUIDE IS INCOMPLETE!
-                      </p>
-                      <p className="font-light mt-4">
-                      However, it should provide enough information for you to get at least to the Nether.
+                      (Does not include materials from alpha or beta updates, only full releases)
                       </p>
                     </motion.p>
           <table className="min-w-full mt-8 border border-gray-600 rounded-lg text-sm text-center">
