@@ -113,6 +113,29 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href="https://scratch.mit.edu/studios/51065058"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(149_91%_53%/0.8)]"
+                  data-testid="link-scratch"
+                >
+                  <img
+                    src={`/assets/scratch_icon.png`}
+                    alt="Scratch Icon"
+                    className="w-13 h-13 min-w-[51px] shrink-0 object-cover image-pixelated objects-center"
+                    data-testid={`img-scratch-icon`}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>Scratch Projects</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           </div>
         </motion.div>
 
