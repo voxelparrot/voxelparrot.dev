@@ -120,7 +120,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
                   href="https://scratch.mit.edu/studios/51065058"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(149_91%_53%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(210_98%_70%/0.8)]"
                   data-testid="link-scratch"
                 >
                   <img
