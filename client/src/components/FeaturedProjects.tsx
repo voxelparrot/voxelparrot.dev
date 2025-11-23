@@ -44,7 +44,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-a"
           >
-            <h3 className="voxel-text text-sm text-primary mb-3">
+            <h3 className="voxel-text text-sm text-primary mb-3 font-bold">
               Particle Timer
             </h3>
 
@@ -67,7 +67,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-b"
           >
-            <h3 className="voxel-text text-sm text-primary mb-3">
+            <h3 className="voxel-text text-sm text-primary mb-3 font-bold">
               Cognata
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
@@ -81,7 +81,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
                 Modrinth
               </a>
               <li>• Balanced progression systems</li>
-              <li>• Quest and achievement design</li>
+              <li>• Mod and resource pack design</li>
             </ul>
           </div>
 
@@ -89,12 +89,12 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             className="bg-card border border-border rounded-lg p-6 hover-lift"
             data-testid="category-c"
           >
-            <h3 className="voxel-text text-sm text-primary mb-3">
-              voxelparrot.dev
+            <h3 className="voxel-text text-sm text-primary mb-3 font-bold">
+              Parrot's Wordle
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
               <a
-                href="https://github.com/voxelparrot/voxelparrot.dev"
+                href="https://github.com/voxelparrot/wordle"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded hover:bg-accent hover:text-accent-foreground transition-all duration-300 ease-in-out pixel-text mr-2"
@@ -102,8 +102,8 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <li>• Documentation</li>
-              <li>• Project information</li>
+              <li>• Local storage systems</li>
+              <li>• Custom word sharing</li>
             </ul>
           </div>
         </div>
