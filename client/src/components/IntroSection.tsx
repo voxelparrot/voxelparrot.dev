@@ -136,6 +136,29 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href="https://voxelparrot.github.io/wordle/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(140_98%_90%/0.8)]"
+                  data-testid="link-wordle"
+                >
+                  <img
+                    src={`/assets/wordle_icon.png`}
+                    alt="Wordle Icon"
+                    className="w-13 h-13 min-w-[51px] shrink-0 object-cover image-pixelated objects-center"
+                    data-testid={`img-wordle-icon`}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>Parrot's Wordle</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           </div>
         </motion.div>
 
