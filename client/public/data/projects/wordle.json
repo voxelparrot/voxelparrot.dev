@@ -1,0 +1,13 @@
+{
+  "name": "Parrot's Wordle",
+  "description": "A wordle recreation made with the Scratch mod Turbowarp.",
+  "extendedDescription": "A wordle recreation made with the Scratch mod Turbowarp.\n\nFeatures randomly chosen words, custom word sharing, and consistent stats with local storage.",
+  "type": "Game",
+  "imageUrl": "wordlebanner.png",
+  "links": {
+    "play": "https://voxelparrot.github.io/wordle/"
+  },
+  "tags": ["Misc", "Website", "Game"],
+  "version": "v1.0.0",
+  "featured": "true"
+}
