@@ -143,7 +143,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
                   href="https://voxelparrot.github.io/wordle/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(140_98%_90%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(150_98%_90%/0.8)]"
                   data-testid="link-wordle"
                 >
                   <img
