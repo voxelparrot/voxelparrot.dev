@@ -5,19 +5,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Button } from "@/components/ui/button";
 
 interface IntroSectionProps {
   setActiveTab: (tabId: string) => void;
 }
 
 export default function IntroSection({ setActiveTab }: IntroSectionProps) {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section
@@ -73,31 +66,10 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  onClick={() => setActiveTab("cognata")}
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(351_91%_65%/0.8)]"
-                  data-testid="link-cognata"
-                >
-                  <img
-                    src={`/assets/cognata_icon.png`}
-                    alt="Cognata Icon"
-                    className="w-13 h-13 min-w-[51px] shrink-0 object-cover image-pixelated objects-center"
-                    data-testid={`img-cognata-icon`}
-                  />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent side="top">
-                <p>Cognata Guide</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a
                   href="https://voxelparrot.github.io/particle-timer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(149_91%_53%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(149_91%_53%/0.8)]"
                   data-testid="link-timer"
                 >
                   <img
@@ -120,7 +92,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
                   href="https://scratch.mit.edu/studios/51065058"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(210_98%_70%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(210_98%_70%/0.8)]"
                   data-testid="link-scratch"
                 >
                   <img
@@ -143,7 +115,7 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
                   href="https://voxelparrot.github.io/wordle/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text flex items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(150_98%_90%/0.8)]"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(150_98%_90%/0.8)]"
                   data-testid="link-wordle"
                 >
                   <img

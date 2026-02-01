@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ProjectsSection from "@/components/ProjectsSection";
-import QuestsSection from "@/components/QuestsSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
-import IntroSection from "@/components/IntroSection";
 
 interface Tab {
   id: string;
@@ -31,14 +27,6 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
-    }
-  };
 
   return (
     <nav
@@ -96,7 +84,7 @@ export default function TabsSection({ activeTab, setActiveTab }: TabsSectionProp
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`voxel-text-sm text-center block w-full text-left px-3 py-2 text-foreground hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)] ${
+                  className={`voxel-text-sm text-center block w-full px-3 py-2 text-foreground hover:text-accent transition-all hover-scale hover:drop-shadow-[0_0_15px_hsl(var(--primary-hue)_50%_70%/0.8)] ${
                     activeTab === tab.id ? "glow-effect-class" : ""
                   }`}
                   onClick={() => setActiveTab(tab.id)}

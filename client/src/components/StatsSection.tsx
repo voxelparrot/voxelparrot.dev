@@ -1,9 +1,5 @@
-import { useState, useEffect } from "react";
-import QuestCard from "./QuestCard";
-import type { Quest } from "@shared/schema";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import LoadingComponent from "@/components/LoadingComponent";
-import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 
 interface StatsSectionProps {
   setActiveTab: (tabId: string) => void;
@@ -23,7 +19,7 @@ export default function StatsSection({ setActiveTab }: StatsSectionProps) {
           </button>
         <div className="overflow-x-auto mt-8 mb-8 text-center">
           <motion.h2
-                    className="voxel-text font-bold text-2xl md:text-4xl font-bold text-primary mb-6"
+                    className="voxel-text font-bold text-2xl md:text-4xl text-primary mb-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}>

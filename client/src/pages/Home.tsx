@@ -1,11 +1,6 @@
 import ParallaxBackground from "@/components/ParallaxBackground";
-import Navigation from "@/components/Navigation";
-import IntroSection from "@/components/IntroSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
 import TabsSection from "@/components/TabsSection";
 import { useEffect, useState } from "react";
-import QuestsSection from "@/components/QuestsSection";
 import TabContent from "@/components/TabContent";
 
 export default function Home() {
