@@ -1,4 +1,4 @@
-name: Deploy Vite site to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -21,16 +21,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Type check
+        run: npm run check
+
       - name: Build frontend
-        run: npm run build:frontend
+        run: npm run build
 
       - name: Show build output
-        run: ls -R dist/public
+        run: ls -R dist/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/public
+          path: ./dist/
 
   deploy:
     needs: build
