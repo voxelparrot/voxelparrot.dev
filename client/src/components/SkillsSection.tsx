@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import type { Skill } from "@shared/schema";
+import type { Skill } from "@/types/schema";
 import LoadingComponent from "@/components/LoadingComponent";
 
 export default function SkillsSection() {

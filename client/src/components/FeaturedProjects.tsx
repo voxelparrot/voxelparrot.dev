@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import type { Project } from "@shared/schema";
+import type { Project } from "@/types/schema";
 import ReactMarkdown from "react-markdown";
 import CardsLoadingComponent from "@/components/CardsLoadingComponent"
 import {

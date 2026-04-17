@@ -5,7 +5,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useTheme } from "@/context/ThemeContext";
 
 export default function ThemeSection() {
   const root = document.documentElement;

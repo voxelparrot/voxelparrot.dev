@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import type { Project } from "@shared/schema";
+import type { Project } from "@/types/schema";
 import { motion } from "framer-motion";
 import LoadingComponent from "@/components/LoadingComponent";
 import CardsLoadingComponent from "@/components/CardsLoadingComponent";
@@ -8,7 +8,7 @@ import CardsLoadingComponent from "@/components/CardsLoadingComponent";
 // Filter options
 const filterfeatured = ["All", "Featured"];
 const filtertype = ["Mods", "Modpacks", "Resource Packs", "Websites", "Other"];
-const filtertags = [];
+const filtertags: string[] = [];
 const filtermods = [
   "Blocks",
   "Equipment",
