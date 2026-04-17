@@ -131,6 +131,29 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href="https://voxelparrot.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 ease-in-out inline-block hover-scale pixel-text items-center justify-center cursor-pointer hover:drop-shadow-[0_0_10px_hsl(10_80%_70%/0.8)]"
+                  data-testid="link-parrot"
+                >
+                  <img
+                    src={`/assets/minipartot.png`}
+                    alt="parrot"
+                    className="w-12 h-12 min-w-[51px] shrink-0 object-cover image-pixelated objects-center"
+                    data-testid={`img-parrot-icon`}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top">
+                <p>go here again? i guess i just wanted to put a parrot here</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           </div>
         </motion.div>
 
