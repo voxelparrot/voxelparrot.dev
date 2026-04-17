@@ -16,7 +16,7 @@
 }
 
 :root {
-  --primary-hue: 210;
+  --primary-hue: 186;
 
   --background: hsl(var(--primary-hue), 13%, 9%);
   --foreground: hsl(var(--primary-hue), 0%, 98%);

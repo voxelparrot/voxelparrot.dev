@@ -19,15 +19,15 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
       data-testid="intro-section"
     >
       <div className="max-w-7xl mx-auto text-center">
-        <motion.h1
-          className="voxel-text text-2xl md:text-4xl font-bold text-primary mb-6"
+        <motion.img
+          className="w-2/3 mx-auto mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           data-testid="intro-title"
-        >
-          Hello
-        </motion.h1>
+          src={`/assets/hello_landscape.png`}
+          alt="Hello"
+        />
 
         <motion.p
           className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto"
