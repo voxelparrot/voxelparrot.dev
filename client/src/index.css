@@ -239,6 +239,21 @@
   }
 }
 
+.tint-image {
+  filter:
+    brightness(1.7)
+    saturate(0.8)
+    contrast(1.1)
+    hue-rotate(calc(var(--primary-hue) * 1deg - 10deg));
+}
+
+.light .tint-image {
+  filter:
+    brightness(2.3)
+    saturate(0.8)
+    hue-rotate(calc(var(--primary-hue) * 1deg - 10deg));
+}
+
 .prose a {
   color: #8bb4ea;
   font-weight: 600;

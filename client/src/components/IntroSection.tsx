@@ -20,12 +20,12 @@ export default function IntroSection({ setActiveTab }: IntroSectionProps) {
     >
       <div className="max-w-7xl mx-auto text-center">
         <motion.img
-          className="w-2/3 mx-auto mb-6"
+          className="mx-auto mb-6 tint-image"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           data-testid="intro-title"
-          src={`/assets/hello_landscape.png`}
+          src="/assets/elloello.png"
           alt="Hello"
         />
 

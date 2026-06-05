@@ -58,8 +58,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <li>• Particle System</li>
-              <li>• Visual Design</li>
+              <p>A web timer that utilizes a custom particle rendering engine built in Scratch.</p>
             </ul>
           </div>
 
@@ -68,7 +67,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
             data-testid="category-b"
           >
             <h3 className="voxel-text text-sm text-primary mb-3 font-bold">
-              Cognata
+              Cognata Remaster
             </h3>
             <ul className="text-sm text-muted-foreground space-y-2">
               <a
@@ -80,8 +79,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Modrinth
               </a>
-              <li>• Balanced progression systems</li>
-              <li>• Mod and resource pack design</li>
+              <p>A Minecraft modpack that turns the game into a more difficult and expansive version of itself, having the player focus on progressing civilization and building infrastructure.</p>
             </ul>
           </div>
 
