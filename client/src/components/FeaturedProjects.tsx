@@ -58,7 +58,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <p>A web timer that utilizes a custom particle rendering engine built in Scratch.</p>
+              <p>A rainbow particle-themed web timer that utilizes a custom particle generation engine built in Scratch.</p>
             </ul>
           </div>
 
@@ -79,7 +79,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Modrinth
               </a>
-              <p>A Minecraft modpack that turns the game into a more difficult and expansive version of itself, having the player focus on progressing civilization and building infrastructure.</p>
+              <p>A Minecraft modpack that turns the game into a more difficult and expansive version of itself, having the player found their own civilization.</p>
             </ul>
           </div>
 
@@ -100,8 +100,7 @@ export default function FeaturedProjects({ setActiveTab }: FeaturedProjectsProps
               >
                 Github
               </a>
-              <li>• Local storage systems</li>
-              <li>• Custom word sharing</li>
+              <p>A wordle game with polished animations and visuals, mobile support, custom words, and even local storage of stats and records.</p>
             </ul>
           </div>
         </div>
